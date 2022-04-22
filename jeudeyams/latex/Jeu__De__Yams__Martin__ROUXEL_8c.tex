@@ -1,0 +1,455 @@
+\hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c}{}\doxysection{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c File Reference}
+\label{Jeu__De__Yams__Martin__ROUXEL_8c}\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}~2
+\begin{DoxyCompactList}\small\item\em constante définie pour être utilisée en indice de création des tableaux de score \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}~17
+\begin{DoxyCompactList}\small\item\em constante définie pour être utilisée en indice de création des tableaux de score \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}~5
+\begin{DoxyCompactList}\small\item\em constante définie pour être utilisée en ondice de création des tableaux de Dés \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}}\mbox{[}9\mbox{]}
+\begin{DoxyCompactList}\small\item\em type correspondant à un nom de joueur de 8 caractères maximum \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a628704c97f701fca1fe1b94f3823154d}{affichagechoix}} (int tab\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}\mbox{]}\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}\mbox{]}, int joueur)
+\begin{DoxyCompactList}\small\item\em procédure qui affiche au joueur les choix qui lui sont encore disponibles \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a0b3734d60d2a3c03b7d3f712787fd194}{afficher\+DES}} (char de\mbox{[}5\mbox{]}\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em procédure qui affiche les dés de manière pseudo-\/graphique (des jolis dés en ascii) grâce à une série de printf() \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a498145b81e7c1f31fdd986ce09e3bf76}{afficher\+Feuille}} (\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} nom1, \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} nom2, int tab\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}\mbox{]}\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em procédure calculant les scores totaux et de bonus des deux joueurs puis affiche la fiche de marque. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_af75dd226440a0873fd42d21dff68190e}{annoncer\+Vainqueur}} (int tab\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}\mbox{]}\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}\mbox{]}, \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} noms\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em fonction qui compare les scores totaux des deux joueurs et affiche le nom du vainqueur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a098fdf2290a397eb0fe77ee109639730}{choix\+DES}} (int nb\+DES\mbox{[}5\mbox{]})
+\begin{DoxyCompactList}\small\item\em procédure qui demande au joueur quels dés choisir en faisant varier un tableau de \mbox{[}5\mbox{]} éléments entre 0 et 1 (l\textquotesingle{}utilisateur entre le numéro du dé à garder/lacher) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4007ee1fb908e9b955f31c0891d17918}{choix\+Option}} (int Des\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}\mbox{]}, int tab\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}\mbox{]}\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}\mbox{]}, int tabtour\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}\mbox{]}\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}\mbox{]}, int joueur)
+\begin{DoxyCompactList}\small\item\em fonction qui demande au joueur de choisir une option et qui attribue le score de l\textquotesingle{}option choisie au tableau de score \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae5ad963a35b217bb80aaed29eccced3e}{comptage\+Nb}} (int DES\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}\mbox{]}, int nombre)
+\begin{DoxyCompactList}\small\item\em fonction qui permet de compter le nombre de fois qu\textquotesingle{}un entier apparait dans un tableau de dés \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a845dd4eb70f0513f2c95443e3a308d1b}{conversion}} (int DES\mbox{[}5\mbox{]}, char de\mbox{[}5\mbox{]}\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em procédure qui convertit un tableau de dés (valeurs entre 1 et 6) en tableau de caractères spécifique pour l\textquotesingle{}affichage \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a5ed213f29e5927f7067501e62566b2a8}{conversion}} (int DES\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}\mbox{]}, char de\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}\mbox{]}\mbox{[}7\mbox{]})
+\item 
+int \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a42cab94268e5bca61a2caf414ce1efde}{demande\+Valid}} ()
+\begin{DoxyCompactList}\small\item\em fonction demandant au joueur si il veut relancer des dés et retourne 1 si oui 0 si non ou 42 en cas d\textquotesingle{}erreur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4e654b73bcc900d9b36ee4636a93e62a}{lancer\+DES}} (int nb\+Des\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}\mbox{]}, int Des\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em procédure qui attribue une valeur aléatoire aux éléments d\textquotesingle{}un tableau\mbox{[}5\mbox{]} \char`\"{}\+Des\char`\"{} en fonction d\textquotesingle{}un tableau\mbox{[}5\mbox{]} \char`\"{}nb\+Des\char`\"{} rempli de 0 ou 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_aa36cb0839bd52790b2d1c20c6bce45fc}{Mise\+AUn}} (int DES\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em met à 1 tous les éléments d\textquotesingle{}un tableau DES de taille \mbox{[}5\mbox{]} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a96df2771d00c1a63d5dd11a17aca2273}{Mise\+AZero}} (int tab\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}\mbox{]}\mbox{[}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em met à zéro un tableau de \mbox{[}17\mbox{]}\mbox{[}2\mbox{]} cases \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a389c263d79245edc65ebae0f6b843d95}{ordonner\+Des}} (int Des\mbox{[}$\,$\mbox{]}, int nb\+Des)
+\begin{DoxyCompactList}\small\item\em procédure qui trie un tableau par ordre croissant \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}\label{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!COLONNES@{COLONNES}}
+\index{COLONNES@{COLONNES}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{COLONNES}{COLONNES}}
+{\footnotesize\ttfamily \#define COLONNES~2}
+
+
+
+constante définie pour être utilisée en indice de création des tableaux de score 
+
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00030}{30}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!LIGNES@{LIGNES}}
+\index{LIGNES@{LIGNES}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{LIGNES}{LIGNES}}
+{\footnotesize\ttfamily \#define LIGNES~17}
+
+
+
+constante définie pour être utilisée en indice de création des tableaux de score 
+
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00025}{25}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}\label{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!NOMBREDES@{NOMBREDES}}
+\index{NOMBREDES@{NOMBREDES}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{NOMBREDES}{NOMBREDES}}
+{\footnotesize\ttfamily \#define NOMBREDES~5}
+
+
+
+constante définie pour être utilisée en ondice de création des tableaux de Dés 
+
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00035}{35}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!nom@{nom}}
+\index{nom@{nom}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily typedef char nom\mbox{[}9\mbox{]}}
+
+
+
+type correspondant à un nom de joueur de 8 caractères maximum 
+
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00020}{20}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a628704c97f701fca1fe1b94f3823154d}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a628704c97f701fca1fe1b94f3823154d}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!affichagechoix@{affichagechoix}}
+\index{affichagechoix@{affichagechoix}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{affichagechoix()}{affichagechoix()}}
+{\footnotesize\ttfamily void affichagechoix (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}\+LIGNES\mbox{]}\mbox{[}\+COLONNES\mbox{]},  }\item[{int}]{joueur }\end{DoxyParamCaption})}
+
+
+
+procédure qui affiche au joueur les choix qui lui sont encore disponibles 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tab} & tableau\mbox{[}17\mbox{]}\mbox{[}2\mbox{]} rempli de 0(choix disponible) ou de 1(choix indisponible) qui permet l\textquotesingle{}affichage des choix disponibles \\
+\hline
+\mbox{\texttt{ in}}  & {\em joueur} & numéro du joueur correspondant aux colonnes du tableau \char`\"{}tab\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+attention, le joueur doit obligatoirement rentrer un entier au clavier.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00434}{434}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a0b3734d60d2a3c03b7d3f712787fd194}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a0b3734d60d2a3c03b7d3f712787fd194}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!afficherDES@{afficherDES}}
+\index{afficherDES@{afficherDES}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{afficherDES()}{afficherDES()}}
+{\footnotesize\ttfamily void afficher\+DES (\begin{DoxyParamCaption}\item[{char}]{de\mbox{[}5\mbox{]}\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+procédure qui affiche les dés de manière pseudo-\/graphique (des jolis dés en ascii) grâce à une série de printf() 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em de} & tableau de caractères définissant l\textquotesingle{}affichage des dés\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00406}{406}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a498145b81e7c1f31fdd986ce09e3bf76}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a498145b81e7c1f31fdd986ce09e3bf76}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!afficherFeuille@{afficherFeuille}}
+\index{afficherFeuille@{afficherFeuille}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{afficherFeuille()}{afficherFeuille()}}
+{\footnotesize\ttfamily void afficher\+Feuille (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}}}]{nom1,  }\item[{\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}}}]{nom2,  }\item[{int}]{tab\mbox{[}\+LIGNES\mbox{]}\mbox{[}\+COLONNES\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+procédure calculant les scores totaux et de bonus des deux joueurs puis affiche la fiche de marque. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nom1} & nom du joueur 1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em nom2} & nom du joueur 2 \\
+\hline
+\mbox{\texttt{ in}}  & {\em tab} & tableau de \mbox{[}17\mbox{]}\mbox{[}2\mbox{]} cases représentant le score\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00250}{250}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_af75dd226440a0873fd42d21dff68190e}\label{Jeu__De__Yams__Martin__ROUXEL_8c_af75dd226440a0873fd42d21dff68190e}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!annoncerVainqueur@{annoncerVainqueur}}
+\index{annoncerVainqueur@{annoncerVainqueur}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{annoncerVainqueur()}{annoncerVainqueur()}}
+{\footnotesize\ttfamily void annoncer\+Vainqueur (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}\+LIGNES\mbox{]}\mbox{[}\+COLONNES\mbox{]},  }\item[{\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}}}]{noms\mbox{[}2\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+fonction qui compare les scores totaux des deux joueurs et affiche le nom du vainqueur 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tab} & tableau\mbox{[}17\mbox{]}\mbox{[}2\mbox{]} de scores \\
+\hline
+\mbox{\texttt{ in}}  & {\em noms} & tableau\mbox{[}2\mbox{]} de noms des joueurs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+attention, le joueur doit obligatoirement rentrer un entier au clavier
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00635}{635}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a098fdf2290a397eb0fe77ee109639730}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a098fdf2290a397eb0fe77ee109639730}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!choixDES@{choixDES}}
+\index{choixDES@{choixDES}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{choixDES()}{choixDES()}}
+{\footnotesize\ttfamily void choix\+DES (\begin{DoxyParamCaption}\item[{int}]{nb\+DES\mbox{[}5\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+procédure qui demande au joueur quels dés choisir en faisant varier un tableau de \mbox{[}5\mbox{]} éléments entre 0 et 1 (l\textquotesingle{}utilisateur entre le numéro du dé à garder/lacher) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em nb\+DES} & tableau de \mbox{[}5\mbox{]} éléments entiers (soit 0 soit 1)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00301}{301}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a4007ee1fb908e9b955f31c0891d17918}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a4007ee1fb908e9b955f31c0891d17918}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!choixOption@{choixOption}}
+\index{choixOption@{choixOption}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{choixOption()}{choixOption()}}
+{\footnotesize\ttfamily void choix\+Option (\begin{DoxyParamCaption}\item[{int}]{Des\mbox{[}\+NOMBREDES\mbox{]},  }\item[{int}]{tab\mbox{[}\+LIGNES\mbox{]}\mbox{[}\+COLONNES\mbox{]},  }\item[{int}]{tabtour\mbox{[}\+LIGNES\mbox{]}\mbox{[}\+COLONNES\mbox{]},  }\item[{int}]{joueur }\end{DoxyParamCaption})}
+
+
+
+fonction qui demande au joueur de choisir une option et qui attribue le score de l\textquotesingle{}option choisie au tableau de score 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Des} & tableau de dés pris en compte pour attribuer un score \\
+\hline
+\mbox{\texttt{ out}}  & {\em tab} & tableau\mbox{[}17\mbox{]}\mbox{[}2\mbox{]} des scores des deux joueurs pour chaque case de la feuille de marque \\
+\hline
+\mbox{\texttt{ out}}  & {\em tabtour} & tableau\mbox{[}17\mbox{]}\mbox{[}2\mbox{]} de forme identique à \char`\"{}tab\char`\"{} qui contient des 1 aux options déjà utilisées pour que le joueur ne puisse pas rejouer deux fois la même chose \\
+\hline
+\mbox{\texttt{ in}}  & {\em joueur} & numéro du joueur correspondant aux colonnes des deux tableaux \char`\"{}tab\char`\"{} et \char`\"{}tabtour\char`\"{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00523}{523}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_ae5ad963a35b217bb80aaed29eccced3e}\label{Jeu__De__Yams__Martin__ROUXEL_8c_ae5ad963a35b217bb80aaed29eccced3e}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!comptageNb@{comptageNb}}
+\index{comptageNb@{comptageNb}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{comptageNb()}{comptageNb()}}
+{\footnotesize\ttfamily int comptage\+Nb (\begin{DoxyParamCaption}\item[{int}]{DES\mbox{[}\+NOMBREDES\mbox{]},  }\item[{int}]{nombre }\end{DoxyParamCaption})}
+
+
+
+fonction qui permet de compter le nombre de fois qu\textquotesingle{}un entier apparait dans un tableau de dés 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em DES} & tableau\mbox{[}5\mbox{]} de dés \\
+\hline
+\mbox{\texttt{ in}}  & {\em nombre} & entier à compter dans le tableau de dés\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entier représentant le nombre d\textquotesingle{}itération de \char`\"{}nombre\char`\"{} dans \char`\"{}\+DES\char`\"{} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00510}{510}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a845dd4eb70f0513f2c95443e3a308d1b}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a845dd4eb70f0513f2c95443e3a308d1b}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!conversion@{conversion}}
+\index{conversion@{conversion}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{conversion()}{conversion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void conversion (\begin{DoxyParamCaption}\item[{int}]{DES\mbox{[}5\mbox{]},  }\item[{char}]{de\mbox{[}5\mbox{]}\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+procédure qui convertit un tableau de dés (valeurs entre 1 et 6) en tableau de caractères spécifique pour l\textquotesingle{}affichage 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em DES} & tableau\mbox{[}5\mbox{]} de dés converti par la procédure \\
+\hline
+\mbox{\texttt{ out}}  & {\em de} & tableau\mbox{[}5\mbox{]}\mbox{[}7\mbox{]} de caractères (\char`\"{} \char`\"{} ou \char`\"{}$\ast$\char`\"{}) pour la fonction afficher\+DES(de)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a5ed213f29e5927f7067501e62566b2a8}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a5ed213f29e5927f7067501e62566b2a8}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!conversion@{conversion}}
+\index{conversion@{conversion}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{conversion()}{conversion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void conversion (\begin{DoxyParamCaption}\item[{int}]{DES\mbox{[}\+NOMBREDES\mbox{]},  }\item[{char}]{de\mbox{[}\+NOMBREDES\mbox{]}\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00341}{341}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a42cab94268e5bca61a2caf414ce1efde}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a42cab94268e5bca61a2caf414ce1efde}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!demandeValid@{demandeValid}}
+\index{demandeValid@{demandeValid}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{demandeValid()}{demandeValid()}}
+{\footnotesize\ttfamily int demande\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+fonction demandant au joueur si il veut relancer des dés et retourne 1 si oui 0 si non ou 42 en cas d\textquotesingle{}erreur 
+
+\begin{DoxyReturn}{Returns}
+Entier (0, 1, 42) 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00415}{415}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a4e654b73bcc900d9b36ee4636a93e62a}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a4e654b73bcc900d9b36ee4636a93e62a}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!lancerDES@{lancerDES}}
+\index{lancerDES@{lancerDES}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{lancerDES()}{lancerDES()}}
+{\footnotesize\ttfamily void lancer\+DES (\begin{DoxyParamCaption}\item[{int}]{nb\+Des\mbox{[}\+NOMBREDES\mbox{]},  }\item[{int}]{Des\mbox{[}\+NOMBREDES\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+procédure qui attribue une valeur aléatoire aux éléments d\textquotesingle{}un tableau\mbox{[}5\mbox{]} \char`\"{}\+Des\char`\"{} en fonction d\textquotesingle{}un tableau\mbox{[}5\mbox{]} \char`\"{}nb\+Des\char`\"{} rempli de 0 ou 1. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nb\+Des} & tableau\mbox{[}5\mbox{]} rempli de 0 ou 1 déterminant quels dés doivent être lançés. \\
+\hline
+\mbox{\texttt{ out}}  & {\em Des} & tableau\mbox{[}5\mbox{]} rempli de valeurs aléatoires entre 1 et 6 par la procédure en fonction du tableau \char`\"{}nb\+Des\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+seul un entier peut être entré par le joueur, sinon le programme ne fonctionne pas.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00329}{329}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{Jeu__De__Yams__Martin__ROUXEL_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!main@{main}}
+\index{main@{main}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+tableaux comportant respectivement les scores et des valeurs binaires permettant à l\textquotesingle{}utilisateur de choisir des options
+
+tableau de deux noms rempli par les joueurs au début de la partie
+
+compteurs et booléens utiles au déroulement du \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}} (tour = nb de tours, nb\+Essais = nb de relances disponibles à chaque tour, joueur = numéro du joueur, valid = booléen de validation fourni par le joueur)
+
+tableaux contenant respectivepent les Dés et les Dés à conserver/relancer pour chaque tour
+
+tableau de caractères utile à l\textquotesingle{}affichage des dés en ascii
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00154}{154}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_aa36cb0839bd52790b2d1c20c6bce45fc}\label{Jeu__De__Yams__Martin__ROUXEL_8c_aa36cb0839bd52790b2d1c20c6bce45fc}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!MiseAUn@{MiseAUn}}
+\index{MiseAUn@{MiseAUn}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{MiseAUn()}{MiseAUn()}}
+{\footnotesize\ttfamily void Mise\+AUn (\begin{DoxyParamCaption}\item[{int}]{DES\mbox{[}\+NOMBREDES\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+met à 1 tous les éléments d\textquotesingle{}un tableau DES de taille \mbox{[}5\mbox{]} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em DES} & tableau de \mbox{[}5\mbox{]} éléments à modifier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00292}{292}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a96df2771d00c1a63d5dd11a17aca2273}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a96df2771d00c1a63d5dd11a17aca2273}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!MiseAZero@{MiseAZero}}
+\index{MiseAZero@{MiseAZero}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{MiseAZero()}{MiseAZero()}}
+{\footnotesize\ttfamily void Mise\+AZero (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}\+LIGNES\mbox{]}\mbox{[}\+COLONNES\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+met à zéro un tableau de \mbox{[}17\mbox{]}\mbox{[}2\mbox{]} cases 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em tab} & un tableau à mettre à zéro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00238}{238}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+
+\mbox{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_a389c263d79245edc65ebae0f6b843d95}\label{Jeu__De__Yams__Martin__ROUXEL_8c_a389c263d79245edc65ebae0f6b843d95}} 
+\index{Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}!ordonnerDes@{ordonnerDes}}
+\index{ordonnerDes@{ordonnerDes}!Jeu\_De\_Yams\_Martin\_ROUXEL.c@{Jeu\_De\_Yams\_Martin\_ROUXEL.c}}
+\doxysubsubsection{\texorpdfstring{ordonnerDes()}{ordonnerDes()}}
+{\footnotesize\ttfamily void ordonner\+Des (\begin{DoxyParamCaption}\item[{int}]{Des\mbox{[}$\,$\mbox{]},  }\item[{int}]{nb\+Des }\end{DoxyParamCaption})}
+
+
+
+procédure qui trie un tableau par ordre croissant 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em Des} & tableau à trier \\
+\hline
+\mbox{\texttt{ in}}  & {\em nb\+Des} & taille du tableau à trier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00491}{491}} of file \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_source}{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}}.
+

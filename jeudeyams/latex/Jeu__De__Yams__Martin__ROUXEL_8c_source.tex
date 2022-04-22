@@ -1,0 +1,507 @@
+\hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source}{}\doxysection{Jeu\+\_\+\+De\+\_\+\+Yams\+\_\+\+Martin\+\_\+\+ROUXEL.\+c}
+\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00010}00010 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00011}00011 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00012}00012 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00013}00013 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00014}00014 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00020}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{00020}} \textcolor{keyword}{typedef} \textcolor{keywordtype}{char} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}}[9];}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00025}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{00025}} \textcolor{preprocessor}{\#define LIGNES 17}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00030}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{00030}} \textcolor{preprocessor}{\#define COLONNES 2}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00035}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{00035}} \textcolor{preprocessor}{\#define NOMBREDES 5}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00044}00044 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a96df2771d00c1a63d5dd11a17aca2273}{MiseAZero}}(\textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00054}00054 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a498145b81e7c1f31fdd986ce09e3bf76}{afficherFeuille}}(\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} nom1, \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} nom2, \textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00062}00062 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_aa36cb0839bd52790b2d1c20c6bce45fc}{MiseAUn}}(\textcolor{keywordtype}{int} DES[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00070}00070 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a098fdf2290a397eb0fe77ee109639730}{choixDES}}(\textcolor{keywordtype}{int} nbDES[5]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00080}00080 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4e654b73bcc900d9b36ee4636a93e62a}{lancerDES}}(\textcolor{keywordtype}{int} nbDes[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}], \textcolor{keywordtype}{int} Des[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00089}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a845dd4eb70f0513f2c95443e3a308d1b}{00089}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a845dd4eb70f0513f2c95443e3a308d1b}{conversion}}(\textcolor{keywordtype}{int} DES[5], \textcolor{keywordtype}{char} de[5][7]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00097}00097 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a0b3734d60d2a3c03b7d3f712787fd194}{afficherDES}}(\textcolor{keywordtype}{char} de[5][7]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00103}00103 \textcolor{keywordtype}{int} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a42cab94268e5bca61a2caf414ce1efde}{demandeValid}}();}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00113}00113 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a628704c97f701fca1fe1b94f3823154d}{affichagechoix}}(\textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}], \textcolor{keywordtype}{int} joueur);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00122}00122 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a389c263d79245edc65ebae0f6b843d95}{ordonnerDes}}(\textcolor{keywordtype}{int} Des[], \textcolor{keywordtype}{int} nbDes);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00131}00131 \textcolor{keywordtype}{int} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae5ad963a35b217bb80aaed29eccced3e}{comptageNb}}(\textcolor{keywordtype}{int} DES[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}], \textcolor{keywordtype}{int} nombre);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00142}00142 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4007ee1fb908e9b955f31c0891d17918}{choixOption}}(\textcolor{keywordtype}{int} Des[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}], \textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}], \textcolor{keywordtype}{int} tabtour[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}], \textcolor{keywordtype}{int} joueur);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00152}00152 \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_af75dd226440a0873fd42d21dff68190e}{annoncerVainqueur}}(\textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}], \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} noms[2]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00154}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{00154}} \textcolor{keywordtype}{int} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \textcolor{comment}{//début du programme principal}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00155}00155 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00156}00156     srand(time(NULL));}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00161}00161     \textcolor{keywordtype}{int} tableau[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}], tableautour[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}];}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00166}00166     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} noms[2];}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00171}00171     \textcolor{keywordtype}{int} nbEssais, tour, joueur, valid;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00176}00176     \textcolor{keywordtype}{int} DES[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}], nbDES[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}];}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00181}00181     \textcolor{keywordtype}{char} de[5][7];}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00182}00182 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00183}00183     printf(\textcolor{stringliteral}{"{}entrer le nom du joueur 1 (8 caractères max) :\(\backslash\)n"{}}); \textcolor{comment}{// demande aux joueurs leurs noms et les entre dans le tableau noms[2]}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00184}00184     scanf(\textcolor{stringliteral}{"{}\%s"{}}, noms[0]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00185}00185     \textcolor{keywordflow}{while} (strlen(noms[0]) > 8)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00186}00186     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00187}00187         printf(\textcolor{stringliteral}{"{}nombre de caractère trop élevé\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00188}00188         scanf(\textcolor{stringliteral}{"{}\%s"{}}, noms[0]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00189}00189     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00190}00190     printf(\textcolor{stringliteral}{"{}entrer le nom du joueur 2 (8 caractères max) :\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00191}00191     scanf(\textcolor{stringliteral}{"{}\%s"{}}, noms[1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00192}00192     \textcolor{keywordflow}{while} (strlen(noms[1]) > 8)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00193}00193     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00194}00194         printf(\textcolor{stringliteral}{"{}nombre de caractère trop élevé\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00195}00195         scanf(\textcolor{stringliteral}{"{}\%s"{}}, noms[1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00196}00196     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00197}00197     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a96df2771d00c1a63d5dd11a17aca2273}{MiseAZero}}(tableau);               \textcolor{comment}{//met le tableau de score à zéro}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00198}00198     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a96df2771d00c1a63d5dd11a17aca2273}{MiseAZero}}(tableautour);           \textcolor{comment}{//met le "{}tableau des choix"{} à 0, ce tableau indique quelles cases le joueur peut encore remplir.}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00199}00199     \textcolor{keywordflow}{for} (tour = 0; tour < 13; tour++) \textcolor{comment}{//la partie dure 13 tours, le temps de remplir chaque case de la feuille de marque}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00200}00200     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00201}00201 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00202}00202         \textcolor{keywordflow}{for} (joueur = 0; joueur < 2; joueur++) \textcolor{comment}{//le corps du programme s'execute une fois pour chaque joueur, par tour}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00203}00203         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00204}00204             \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a498145b81e7c1f31fdd986ce09e3bf76}{afficherFeuille}}(noms[0], noms[1], tableau); \textcolor{comment}{//affiche la feuille de marque pour que le joueur se repère facilement au niveau des scores}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00205}00205             \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_aa36cb0839bd52790b2d1c20c6bce45fc}{MiseAUn}}(nbDES);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00206}00206             nbEssais = 2;          \textcolor{comment}{//configure le nombre de relance de dés disponibles à 2}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00207}00207             \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4e654b73bcc900d9b36ee4636a93e62a}{lancerDES}}(nbDES, DES); \textcolor{comment}{//remplis le tableau de dés avec des valeurs pseudo-\/aléatoires de 1 à 6}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00208}00208             \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a845dd4eb70f0513f2c95443e3a308d1b}{conversion}}(DES, de);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00209}00209             printf(\textcolor{stringliteral}{"{}Au tour de \%s :"{}}, noms[joueur]); \textcolor{comment}{//indique quel joueur doit interagir avec le terminal pour le prochain tour}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00210}00210             \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a0b3734d60d2a3c03b7d3f712787fd194}{afficherDES}}(de);                         \textcolor{comment}{//affiche les dés en caractères ascii}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00211}00211 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00212}00212             \textcolor{keywordflow}{do} \textcolor{comment}{//demande au joueur un nombre limité de fois si il souhaite changer certains dés}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00213}00213             \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00214}00214 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00215}00215                 valid = \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a42cab94268e5bca61a2caf414ce1efde}{demandeValid}}();}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00216}00216 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00217}00217                 \textcolor{keywordflow}{if} (valid == 1) \textcolor{comment}{//si le joueur valide, il relance les dés de son choix, sinon il doit directement choisir une option}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00218}00218                 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00219}00219 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00220}00220                     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a098fdf2290a397eb0fe77ee109639730}{choixDES}}(nbDES);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00221}00221                     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4e654b73bcc900d9b36ee4636a93e62a}{lancerDES}}(nbDES, DES);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00222}00222                     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a845dd4eb70f0513f2c95443e3a308d1b}{conversion}}(DES, de);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00223}00223                     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a0b3734d60d2a3c03b7d3f712787fd194}{afficherDES}}(de);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00224}00224                     nbEssais-\/-\/; \textcolor{comment}{//le nombre de relance est diminué après cette étape}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00225}00225                 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00226}00226             \} \textcolor{keywordflow}{while} (nbEssais != 0 \&\& valid == 1);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00227}00227 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00228}00228             \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a389c263d79245edc65ebae0f6b843d95}{ordonnerDes}}(DES, \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}});                    \textcolor{comment}{//trie les dés pour le bon fonctionnement de l'attribution des scores}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00229}00229             \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4007ee1fb908e9b955f31c0891d17918}{choixOption}}(DES, tableau, tableautour, joueur); \textcolor{comment}{//demande au joueur courant de choisir une option non remplie et lui attribue un score}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00230}00230         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00231}00231     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00232}00232 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00233}00233     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a498145b81e7c1f31fdd986ce09e3bf76}{afficherFeuille}}(noms[0], noms[1], tableau); \textcolor{comment}{//affiche la feuille de marque une dernière fois}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00234}00234     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_af75dd226440a0873fd42d21dff68190e}{annoncerVainqueur}}(tableau, noms);           \textcolor{comment}{//compare les deux scores et annonce un vainqueur}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00235}00235     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00236}00236 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00237}00237 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00238}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a96df2771d00c1a63d5dd11a17aca2273}{00238}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a96df2771d00c1a63d5dd11a17aca2273}{MiseAZero}}(\textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}]) \textcolor{comment}{//remplace tous les éléments d'un tableau par 0}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00239}00239 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00240}00240     \textcolor{keywordtype}{int} i, k; \textcolor{comment}{//compteurs}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00241}00241     \textcolor{keywordflow}{for} (i = 0; i < \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}; i++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00242}00242     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00243}00243         \textcolor{keywordflow}{for} (k = 0; k < \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}; k++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00244}00244         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00245}00245             tab[k][i] = 0; \textcolor{comment}{//remplacement par 0}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00246}00246         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00247}00247     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00248}00248 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00249}00249 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00250}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a498145b81e7c1f31fdd986ce09e3bf76}{00250}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a498145b81e7c1f31fdd986ce09e3bf76}{afficherFeuille}}(\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} nom1, \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} nom2, \textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}]) \textcolor{comment}{//affiche la feuille de marque après avoir calculé les scores totaux}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00251}00251 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00252}00252     \textcolor{keywordflow}{if} ((tab[0][0] + tab[1][0] + tab[2][0] + tab[3][0] + tab[4][0] + tab[5][0]) >= 63)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00253}00253     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00254}00254         tab[6][0] = 35; \textcolor{comment}{//bonus joueur 1}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00255}00255     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00256}00256     \textcolor{keywordflow}{if} ((tab[0][1] + tab[1][1] + tab[2][1] + tab[3][1] + tab[4][1] + tab[5][1]) >= 63)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00257}00257     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00258}00258         tab[6][1] = 35; \textcolor{comment}{//bonus joueur 2}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00259}00259     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00260}00260     tab[7][0] = tab[0][0] + tab[1][0] + tab[2][0] + tab[3][0] + tab[4][0] + tab[5][0] + tab[6][0];       \textcolor{comment}{//total sup J1}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00261}00261     tab[7][1] = tab[0][1] + tab[1][1] + tab[2][1] + tab[3][1] + tab[4][1] + tab[5][1] + tab[6][1];       \textcolor{comment}{//total sup J2}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00262}00262     tab[15][0] = tab[8][0] + tab[9][0] + tab[10][0] + tab[11][0] + tab[12][0] + tab[13][0] + tab[14][0]; \textcolor{comment}{//total inf J1}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00263}00263     tab[15][1] = tab[8][1] + tab[9][1] + tab[10][1] + tab[11][1] + tab[12][1] + tab[13][1] + tab[14][1]; \textcolor{comment}{//total inf J2}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00264}00264     tab[16][0] = tab[7][0] + tab[15][0];                                                                 \textcolor{comment}{//total score J1}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00265}00265     tab[16][1] = tab[7][1] + tab[15][1];                                                                 \textcolor{comment}{//total score J2}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00266}00266     printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00267}00267     printf(\textcolor{stringliteral}{"{}J1:\%8s J2:\%8s      J1        J2\(\backslash\)n"{}}, nom1, nom2);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00268}00268     printf(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00269}00269     printf(\textcolor{stringliteral}{"{}Partie Supérieure\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00270}00270     printf(\textcolor{stringliteral}{"{}1 [total de 1]          |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[0][0], tab[0][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00271}00271     printf(\textcolor{stringliteral}{"{}2 [total de 2]          |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[1][0], tab[1][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00272}00272     printf(\textcolor{stringliteral}{"{}3 [total de 3]          |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[2][0], tab[2][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00273}00273     printf(\textcolor{stringliteral}{"{}4 [total de 4]          |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[3][0], tab[3][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00274}00274     printf(\textcolor{stringliteral}{"{}5 [total de 5]          |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[4][0], tab[4][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00275}00275     printf(\textcolor{stringliteral}{"{}6 [total de 6]          |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[5][0], tab[5][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00276}00276     printf(\textcolor{stringliteral}{"{}Bonus                   |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[6][0], tab[6][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00277}00277     printf(\textcolor{stringliteral}{"{}Total Supérieur         |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[7][0], tab[7][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00278}00278     printf(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00279}00279     printf(\textcolor{stringliteral}{"{}Partie Inférieure\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00280}00280     printf(\textcolor{stringliteral}{"{}Brelan                  |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[8][0], tab[8][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00281}00281     printf(\textcolor{stringliteral}{"{}Carré                   |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[9][0], tab[9][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00282}00282     printf(\textcolor{stringliteral}{"{}Full                    |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[10][0], tab[10][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00283}00283     printf(\textcolor{stringliteral}{"{}Petite Suite            |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[11][0], tab[11][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00284}00284     printf(\textcolor{stringliteral}{"{}Grande Suite            |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[12][0], tab[12][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00285}00285     printf(\textcolor{stringliteral}{"{}Yams                    |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[13][0], tab[13][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00286}00286     printf(\textcolor{stringliteral}{"{}Chance [total des DES]  |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[14][0], tab[14][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00287}00287     printf(\textcolor{stringliteral}{"{}Total Inférieur         |   \%3d   |   \%3d   |\(\backslash\)n"{}}, tab[15][0], tab[15][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00288}00288     printf(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00289}00289     printf(\textcolor{stringliteral}{"{}Total                   |   \%3d   |   \%3d   |\(\backslash\)n\(\backslash\)n\(\backslash\)n"{}}, tab[16][0], tab[16][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00290}00290 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00291}00291 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00292}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_aa36cb0839bd52790b2d1c20c6bce45fc}{00292}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_aa36cb0839bd52790b2d1c20c6bce45fc}{MiseAUn}}(\textcolor{keywordtype}{int} DES[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}]) \textcolor{comment}{//remplace les éléments d'un tableau par 1}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00293}00293 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00294}00294     \textcolor{keywordtype}{int} i; \textcolor{comment}{//compteur}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00295}00295     \textcolor{keywordflow}{for} (i = 0; i < 5; i++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00296}00296     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00297}00297         DES[i] = 1; \textcolor{comment}{//mise à 1}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00298}00298     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00299}00299 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00300}00300 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00301}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a098fdf2290a397eb0fe77ee109639730}{00301}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a098fdf2290a397eb0fe77ee109639730}{choixDES}}(\textcolor{keywordtype}{int} nbDES[5]) \textcolor{comment}{//permet au joueur de sélectionner les dés qu'il veut garder/changer}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00302}00302 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00303}00303     \textcolor{keywordtype}{int} rep;        \textcolor{comment}{//réponse du joueur}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00304}00304     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_aa36cb0839bd52790b2d1c20c6bce45fc}{MiseAUn}}(nbDES); \textcolor{comment}{//par défaut tous les dés sont changés}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00305}00305     \textcolor{keywordflow}{do}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00306}00306     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00307}00307         printf(\textcolor{stringliteral}{"{}\(\backslash\)nsélectionnez un dé à conserver ou lacher, 0 pour arrêter\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00308}00308         \textcolor{keywordflow}{do}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00309}00309         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00310}00310             scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&rep);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00311}00311             \textcolor{keywordflow}{if} (rep < 0 || rep > 5)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00312}00312             \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00313}00313                 printf(\textcolor{stringliteral}{"{}valeur incorrecte, réentrez un nombre\(\backslash\)n\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00314}00314             \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00315}00315         \} \textcolor{keywordflow}{while} (rep < 0 || rep > 5);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00316}00316         \textcolor{keywordflow}{if} (nbDES[rep -\/ 1] == 0) \textcolor{comment}{//dé laché si dé déjà gardé}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00317}00317         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00318}00318             nbDES[rep -\/ 1] = 1;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00319}00319             printf(\textcolor{stringliteral}{"{}dé \%d laché\(\backslash\)n"{}}, rep);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00320}00320         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00321}00321         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (nbDES[rep -\/ 1] == 1) \textcolor{comment}{//dé gardé si dé déjà laché}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00322}00322         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00323}00323             nbDES[rep -\/ 1] = 0;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00324}00324             printf(\textcolor{stringliteral}{"{}dé \%d conservé\(\backslash\)n"{}}, rep);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00325}00325         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00326}00326     \} \textcolor{keywordflow}{while} (rep != 0);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00327}00327 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00328}00328 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00329}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4e654b73bcc900d9b36ee4636a93e62a}{00329}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4e654b73bcc900d9b36ee4636a93e62a}{lancerDES}}(\textcolor{keywordtype}{int} nbDes[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}], \textcolor{keywordtype}{int} Des[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}]) \textcolor{comment}{//lance les dés (tableau de 5 entiers)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00330}00330 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00331}00331     \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00332}00332     \textcolor{keywordflow}{for} (i = 0; i < 5; i++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00333}00333     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00334}00334         \textcolor{keywordflow}{if} (nbDes[i] == 1) \textcolor{comment}{//pour chaque dé, si le booléen du tableau nbDes correspondant est 1, il est changé}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00335}00335         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00336}00336             Des[i] = (rand() \% (6 -\/ 1 + 1)) + 1; \textcolor{comment}{//entier pseudo-\/aléatoire entre 1 et 6}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00337}00337         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00338}00338     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00339}00339 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00340}00340 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00341}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a5ed213f29e5927f7067501e62566b2a8}{00341}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a845dd4eb70f0513f2c95443e3a308d1b}{conversion}}(\textcolor{keywordtype}{int} DES[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}], \textcolor{keywordtype}{char} de[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}][7]) \textcolor{comment}{//permet de rendre le tableau de dés apte à l'affichage}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00342}00342 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00343}00343     \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00344}00344     \textcolor{keywordflow}{for} (i = 0; i < 5; i++) \textcolor{comment}{//pour chaque dé}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00345}00345     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00346}00346         \textcolor{keywordflow}{switch} (DES[i])}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00347}00347         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00348}00348         \textcolor{keywordflow}{case} 1: \textcolor{comment}{//le dé est un 1}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00349}00349             de[i][0] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00350}00350             de[i][1] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00351}00351             de[i][2] = \textcolor{charliteral}{' '}; \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/  (affichage exemple pour le dé 1)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00352}00352             de[i][3] = \textcolor{charliteral}{'*'}; \textcolor{comment}{//|       |}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00353}00353             de[i][4] = \textcolor{charliteral}{' '}; \textcolor{comment}{//|   *   |}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00354}00354             de[i][5] = \textcolor{charliteral}{' '}; \textcolor{comment}{//|       |}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00355}00355             de[i][6] = \textcolor{charliteral}{' '}; \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00356}00356             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00357}00357         \textcolor{keywordflow}{case} 2: \textcolor{comment}{//le dé est un 2}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00358}00358             de[i][0] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00359}00359             de[i][1] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00360}00360             de[i][2] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00361}00361             de[i][3] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00362}00362             de[i][4] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00363}00363             de[i][5] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00364}00364             de[i][6] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00365}00365             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00366}00366         \textcolor{keywordflow}{case} 3: \textcolor{comment}{//le dé est un 3}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00367}00367             de[i][0] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00368}00368             de[i][1] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00369}00369             de[i][2] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00370}00370             de[i][3] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00371}00371             de[i][4] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00372}00372             de[i][5] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00373}00373             de[i][6] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00374}00374             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00375}00375         \textcolor{keywordflow}{case} 4: \textcolor{comment}{//le dé est un 4}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00376}00376             de[i][0] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00377}00377             de[i][1] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00378}00378             de[i][2] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00379}00379             de[i][3] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00380}00380             de[i][4] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00381}00381             de[i][5] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00382}00382             de[i][6] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00383}00383             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00384}00384         \textcolor{keywordflow}{case} 5: \textcolor{comment}{//le dé est un 5}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00385}00385             de[i][0] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00386}00386             de[i][1] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00387}00387             de[i][2] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00388}00388             de[i][3] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00389}00389             de[i][4] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00390}00390             de[i][5] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00391}00391             de[i][6] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00392}00392             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00393}00393         \textcolor{keywordflow}{case} 6: \textcolor{comment}{//le dé est un 6}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00394}00394             de[i][0] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00395}00395             de[i][1] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00396}00396             de[i][2] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00397}00397             de[i][3] = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00398}00398             de[i][4] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00399}00399             de[i][5] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00400}00400             de[i][6] = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00401}00401             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00402}00402         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00403}00403     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00404}00404 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00405}00405 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00406}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a0b3734d60d2a3c03b7d3f712787fd194}{00406}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a0b3734d60d2a3c03b7d3f712787fd194}{afficherDES}}(\textcolor{keywordtype}{char} de[5][7]) \textcolor{comment}{//affiche les dés horizontalement avec l'aide de la fonction précédente}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00407}00407 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00408}00408     printf(\textcolor{stringliteral}{"{}\(\backslash\)n -\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/ \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00409}00409     printf(\textcolor{stringliteral}{"{}| \%c   \%c || \%c   \%c || \%c   \%c || \%c   \%c || \%c   \%c |\(\backslash\)n"{}}, de[0][0], de[0][1], de[1][0], de[1][1], de[2][0], de[2][1], de[3][0], de[3][1], de[4][0], de[4][1]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00410}00410     printf(\textcolor{stringliteral}{"{}| \%c \%c \%c || \%c \%c \%c || \%c \%c \%c || \%c \%c \%c || \%c \%c \%c |\(\backslash\)n"{}}, de[0][2], de[0][3], de[0][4], de[1][2], de[1][3], de[1][4], de[2][2], de[2][3], de[2][4], de[3][2], de[3][3], de[3][4], de[4][2], de[4][3], de[4][4]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00411}00411     printf(\textcolor{stringliteral}{"{}| \%c   \%c || \%c   \%c || \%c   \%c || \%c   \%c || \%c   \%c |\(\backslash\)n"{}}, de[0][5], de[0][6], de[1][5], de[1][6], de[2][5], de[2][6], de[3][5], de[3][6], de[4][5], de[4][6]);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00412}00412     printf(\textcolor{stringliteral}{"{} -\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/  -\/-\/-\/-\/-\/-\/-\/ \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00413}00413 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00414}00414 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00415}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a42cab94268e5bca61a2caf414ce1efde}{00415}} \textcolor{keywordtype}{int} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a42cab94268e5bca61a2caf414ce1efde}{demandeValid}}() \textcolor{comment}{//demande au joueur si il veut relancer ou non des dés}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00416}00416 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00417}00417     \textcolor{keywordtype}{int} rep = 2;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00418}00418     \textcolor{keywordflow}{while} (rep < 0 || rep > 1)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00419}00419     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00420}00420         printf(\textcolor{stringliteral}{"{}souhaitez vous relancer 0 (oui)/1 (non)\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00421}00421         scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&rep);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00422}00422     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00423}00423     \textcolor{keywordflow}{if} (rep == 0) \textcolor{comment}{//si le joueur répond 0 la procédure retourne 1}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00424}00424     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00425}00425         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00426}00426     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00427}00427     \textcolor{keywordflow}{else} \textcolor{comment}{//sinon elle retourne 0}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00428}00428     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00429}00429         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00430}00430     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00431}00431     \textcolor{keywordflow}{return} 42; \textcolor{comment}{//en cas d'erreur la fonction retourne 42}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00432}00432 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00433}00433 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00434}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a628704c97f701fca1fe1b94f3823154d}{00434}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a628704c97f701fca1fe1b94f3823154d}{affichagechoix}}(\textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}], \textcolor{keywordtype}{int} joueur) \textcolor{comment}{//cette fonction affiche les choix que le joueur peut encore faire (les choix ne s'affichent qu'une fois et disparaissent après avoir été utilisés)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00435}00435 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00436}00436     printf(\textcolor{stringliteral}{"{}\(\backslash\)nchoisissez une des options disponibles :\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00437}00437     \textcolor{keywordflow}{if} (tab[0][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00438}00438     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00439}00439         printf(\textcolor{stringliteral}{"{}total de 1 = 1\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00440}00440     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00441}00441     \textcolor{keywordflow}{if} (tab[1][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00442}00442     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00443}00443         printf(\textcolor{stringliteral}{"{}total de 2 = 2\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00444}00444     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00445}00445     \textcolor{keywordflow}{if} (tab[2][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00446}00446     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00447}00447         printf(\textcolor{stringliteral}{"{}total de 3 = 3\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00448}00448     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00449}00449     \textcolor{keywordflow}{if} (tab[3][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00450}00450     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00451}00451         printf(\textcolor{stringliteral}{"{}total de 4 = 4\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00452}00452     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00453}00453     \textcolor{keywordflow}{if} (tab[4][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00454}00454     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00455}00455         printf(\textcolor{stringliteral}{"{}total de 5 = 5\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00456}00456     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00457}00457     \textcolor{keywordflow}{if} (tab[5][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00458}00458     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00459}00459         printf(\textcolor{stringliteral}{"{}total de 6 = 6\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00460}00460     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00461}00461     \textcolor{keywordflow}{if} (tab[8][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00462}00462     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00463}00463         printf(\textcolor{stringliteral}{"{}brelan = 7\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00464}00464     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00465}00465     \textcolor{keywordflow}{if} (tab[9][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00466}00466     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00467}00467         printf(\textcolor{stringliteral}{"{}carré = 8\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00468}00468     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00469}00469     \textcolor{keywordflow}{if} (tab[10][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00470}00470     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00471}00471         printf(\textcolor{stringliteral}{"{}fullhouse = 9\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00472}00472     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00473}00473     \textcolor{keywordflow}{if} (tab[11][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00474}00474     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00475}00475         printf(\textcolor{stringliteral}{"{}petite suite = 10\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00476}00476     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00477}00477     \textcolor{keywordflow}{if} (tab[12][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00478}00478     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00479}00479         printf(\textcolor{stringliteral}{"{}grande suite = 11\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00480}00480     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00481}00481     \textcolor{keywordflow}{if} (tab[13][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00482}00482     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00483}00483         printf(\textcolor{stringliteral}{"{}Yams = 12\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00484}00484     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00485}00485     \textcolor{keywordflow}{if} (tab[14][joueur] == 0)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00486}00486     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00487}00487         printf(\textcolor{stringliteral}{"{}Chance = 13\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00488}00488     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00489}00489 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00490}00490 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00491}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a389c263d79245edc65ebae0f6b843d95}{00491}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a389c263d79245edc65ebae0f6b843d95}{ordonnerDes}}(\textcolor{keywordtype}{int} Des[], \textcolor{keywordtype}{int} nbDes) \textcolor{comment}{//tri du tableau de dés pour le choixOption()}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00492}00492 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00493}00493     \textcolor{keywordtype}{int} tampon = 0, v = 0, i;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00494}00494 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00495}00495     \textcolor{keywordflow}{do}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00496}00496     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00497}00497         \textcolor{keywordflow}{for} (i = 0; i < nbDes; i++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00498}00498         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00499}00499             \textcolor{keywordflow}{if} (Des[i] > Des[i + 1])}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00500}00500             \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00501}00501                 tampon = Des[i];}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00502}00502                 Des[i] = Des[i + 1];}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00503}00503                 Des[i + 1] = tampon;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00504}00504             \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00505}00505         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00506}00506         v++;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00507}00507     \} \textcolor{keywordflow}{while} (v < nbDes);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00508}00508 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00509}00509 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00510}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae5ad963a35b217bb80aaed29eccced3e}{00510}} \textcolor{keywordtype}{int} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae5ad963a35b217bb80aaed29eccced3e}{comptageNb}}(\textcolor{keywordtype}{int} DES[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}], \textcolor{keywordtype}{int} nombre) \textcolor{comment}{//fonction qui compte le nombre d'apparition d'un entier dans les dés}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00511}00511 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00512}00512     \textcolor{keywordtype}{int} i, resultat = 0;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00513}00513     \textcolor{keywordflow}{for} (i = 0; i < \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}; i++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00514}00514     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00515}00515         \textcolor{keywordflow}{if} (DES[i] == nombre)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00516}00516         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00517}00517             resultat++;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00518}00518         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00519}00519     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00520}00520     \textcolor{keywordflow}{return} resultat;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00521}00521 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00522}00522 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00523}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4007ee1fb908e9b955f31c0891d17918}{00523}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a4007ee1fb908e9b955f31c0891d17918}{choixOption}}(\textcolor{keywordtype}{int} Des[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae72f38fb6bc9a6dc0d11a1e7972f3ec4}{NOMBREDES}}], \textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}], \textcolor{keywordtype}{int} tabtour[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}], \textcolor{keywordtype}{int} joueur) \textcolor{comment}{//fonction au coeur du programme qui permet au joueur de choisir une option parmi celles qui sont disponibles et de gagner des points}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00524}00524 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00525}00525     \textcolor{keywordtype}{int} reponse, nb, i; \textcolor{comment}{// (reponse = réponse entrée par le joueur, nb = entier affecté de la fonction comptageNb(), i = compteur)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00526}00526     \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a628704c97f701fca1fe1b94f3823154d}{affichagechoix}}(tabtour, joueur);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00527}00527     scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&reponse);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00528}00528     \textcolor{keywordflow}{if} (reponse < 7) \textcolor{comment}{// pour garder des numéros d'options cohérent je divise la table en deux parties (erreurs sinon à cause des cases "{}total"{} ou "{}bonus"{})}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00529}00529     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00530}00530         \textcolor{keywordflow}{while} (tabtour[reponse -\/ 1][joueur] == 1 || reponse < 1 || reponse > 13)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00531}00531         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00532}00532             printf(\textcolor{stringliteral}{"{}\(\backslash\)nun score est déjà attribué à cette entrée ou la case sélectionnée n'existe pas, entrez à nouveau une réponse :\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00533}00533             scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&reponse);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00534}00534         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00535}00535     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00536}00536     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (reponse > 6) \textcolor{comment}{//deuxième partie de la table}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00537}00537     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00538}00538         \textcolor{keywordflow}{while} (tabtour[reponse + 1][joueur] == 1 || reponse < 1 || reponse > 13)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00539}00539         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00540}00540             printf(\textcolor{stringliteral}{"{}\(\backslash\)nun score est déjà attribué à cette entrée ou la case sélectionnée n'existe pas, entrez à nouveau une réponse :\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00541}00541             scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&reponse);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00542}00542         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00543}00543     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00544}00544     \textcolor{keywordflow}{for} (i = 1; i < 7; i++) \textcolor{comment}{//pour les réponses 1 à 6 l'affectation du score est la même}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00545}00545     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00546}00546         \textcolor{keywordflow}{if} (reponse == i)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00547}00547         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00548}00548             nb = \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae5ad963a35b217bb80aaed29eccced3e}{comptageNb}}(Des, i);}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00549}00549             tab[i -\/ 1][joueur] = i * nb;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00550}00550             tabtour[i -\/ 1][joueur] = 1;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00551}00551         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00552}00552     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00553}00553     \textcolor{keywordflow}{switch} (reponse) \textcolor{comment}{//switch pour tous les autres cas de réponse possible}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00554}00554     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00555}00555     \textcolor{keywordflow}{case} 7: \textcolor{comment}{//brelan (donne les points si trois fois le même dé)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00556}00556         \textcolor{keywordflow}{for} (i = 0; i < 6; i++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00557}00557         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00558}00558             \textcolor{keywordflow}{if} (\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae5ad963a35b217bb80aaed29eccced3e}{comptageNb}}(Des, i + 1) >= 3)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00559}00559             \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00560}00560                 tab[8][joueur] = (i + 1) * 3;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00561}00561                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00562}00562             \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00563}00563         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00564}00564         tabtour[8][joueur] = 1; \textcolor{comment}{//pour chaque choix effectué, la case correspondante du tableau tabtour est mise à 1 ce qui empêche l'option d'être affichée ET sélectionnée au futur}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00565}00565         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00566}00566 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00567}00567     \textcolor{keywordflow}{case} 8: \textcolor{comment}{//carré (donne les points si quatre fois le même dé)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00568}00568         \textcolor{keywordflow}{for} (i = 0; i < 6; i++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00569}00569         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00570}00570             \textcolor{keywordflow}{if} (\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_ae5ad963a35b217bb80aaed29eccced3e}{comptageNb}}(Des, i + 1) >= 4)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00571}00571             \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00572}00572                 tab[9][joueur] = (i + 1) * 4;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00573}00573             \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00574}00574         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00575}00575         tabtour[9][joueur] = 1;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00576}00576         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00577}00577 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00578}00578     \textcolor{keywordflow}{case} 9: \textcolor{comment}{//fullhouse (donne les points si 3 dés + 2 dés identiques)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00579}00579 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00580}00580         \textcolor{keywordflow}{if} ((Des[0] == Des[1] \&\& Des[2] == Des[4]) || (Des[0] == Des[2] \&\& Des[3] == Des[4]))}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00581}00581         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00582}00582             tab[10][joueur] = 25;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00583}00583         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00584}00584 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00585}00585         tabtour[10][joueur] = 1;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00586}00586         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00587}00587 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00588}00588     \textcolor{keywordflow}{case} 10: \textcolor{comment}{//petite suite (donne les points si les dés présentent une suite croissante de 3 nombres ex : 1,2,3)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00589}00589         \textcolor{keywordflow}{if} ((Des[0] + 1 == Des[1] \&\& Des[1] + 1 == Des[2] \&\& Des[2] + 1 == Des[3]) || (Des[1] + 1 == Des[2] \&\& Des[2] + 1 == Des[3] \&\& Des[3] + 1 == Des[4]))}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00590}00590         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00591}00591             tab[11][joueur] = 30;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00592}00592         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00593}00593 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00594}00594         tabtour[11][joueur] = 1;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00595}00595         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00596}00596 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00597}00597     \textcolor{keywordflow}{case} 11: \textcolor{comment}{//grande suite (donne les points si les dés forment une suite de 5 nombres ex : 1,2,3,4,5)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00598}00598         \textcolor{keywordflow}{if} (Des[0] + 1 == Des[1])}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00599}00599         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00600}00600             \textcolor{keywordflow}{if} (Des[1] + 1 == Des[2])}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00601}00601             \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00602}00602                 \textcolor{keywordflow}{if} (Des[2] + 1 == Des[3])}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00603}00603                 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00604}00604                     \textcolor{keywordflow}{if} (Des[3] + 1 == Des[4])}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00605}00605                     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00606}00606                         tab[12][joueur] = 40;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00607}00607                     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00608}00608                 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00609}00609             \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00610}00610         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00611}00611         tabtour[12][joueur] = 1;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00612}00612         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00613}00613 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00614}00614     \textcolor{keywordflow}{case} 12: \textcolor{comment}{//yams (donne les points si tous les dés sont identiques)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00615}00615         \textcolor{keywordflow}{for} (i = 0; i < 5; i++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00616}00616         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00617}00617             \textcolor{keywordflow}{if} (Des[0] == Des[1] \&\& Des[1] == Des[2] \&\& Des[2] == Des[3] \&\& Des[3] == Des[4])}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00618}00618             \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00619}00619                 tab[13][joueur] = 50;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00620}00620             \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00621}00621         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00622}00622         tabtour[13][joueur] = 1;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00623}00623         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00624}00624 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00625}00625     \textcolor{keywordflow}{case} 13: \textcolor{comment}{//chance (donne des points équivalents à la somme des dés)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00626}00626         \textcolor{keywordflow}{for} (i = 0; i < 5; i++)}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00627}00627         \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00628}00628             tab[14][joueur] = tab[14][joueur] + Des[i];}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00629}00629         \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00630}00630         tabtour[14][joueur] = 1;}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00631}00631         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00632}00632     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00633}00633 \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00634}00634 }
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00635}\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_af75dd226440a0873fd42d21dff68190e}{00635}} \textcolor{keywordtype}{void} \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_af75dd226440a0873fd42d21dff68190e}{annoncerVainqueur}}(\textcolor{keywordtype}{int} tab[\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a3cb60346c1125bf9663f75a4f2cde9f7}{LIGNES}}][\mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_afe46c9708ee2f4c6fc9221efa4144faa}{COLONNES}}], \mbox{\hyperlink{Jeu__De__Yams__Martin__ROUXEL_8c_a37ceb1f2199bc286358893017fc27973}{nom}} noms[2]) \textcolor{comment}{//procédure qui annonce le vainqueur après avoir comparé les scores des joueurs}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00636}00636 \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00637}00637     \textcolor{keywordflow}{if} (tab[16][0] == tab[16][1])}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00638}00638     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00639}00639         printf(\textcolor{stringliteral}{"{}égalité entre les deux joueurs avec un total de \%d points.\(\backslash\)n"{}}, tab[16][0]); \textcolor{comment}{//cas d'égalité (très très peu probable)}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00640}00640     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00641}00641     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (tab[16][0] > tab[16][1])}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00642}00642     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00643}00643         printf(\textcolor{stringliteral}{"{}\%s l'emporte avec un total de \%d points.\(\backslash\)n"{}}, noms[0], tab[16][0]); \textcolor{comment}{//J1 l'emporte}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00644}00644     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00645}00645     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00646}00646     \{}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00647}00647         printf(\textcolor{stringliteral}{"{}\%s l'emporte avec un total de \%d points.\(\backslash\)n"{}}, noms[1], tab[16][1]); \textcolor{comment}{//J2 l'emporte}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00648}00648     \}}
+\DoxyCodeLine{\Hypertarget{Jeu__De__Yams__Martin__ROUXEL_8c_source_l00649}00649 \}}
+
+\end{DoxyCode}

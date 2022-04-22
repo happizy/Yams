@@ -1,0 +1,1433 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment Jeu De Yams MARTIN ROUXEL  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0 \par
+}}Jeu De Yams MARTIN ROUXEL}
+{\comment Generated by doxygen1.9.3.}
+{\creatim \yr2021\mo11\dy28\hr17\min33\sec28}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Jeu De Yams MARTIN ROUXEL}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 1.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Sun Nov 28 2021 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Jeu_De_Yams_Martin_ROUXEL.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Jeu_De_Yams_Martin_ROUXEL.c File Reference\par \pard\plain 
+{\tc\tcl2 \v Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdlib.h>}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include <time.h>}\par
+{\f2 #include <unistd.h>}\par
+{\f2 #include <string.h>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b COLONNES}\~ 2\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+constante d\'E9finie pour \'EAtre utilis\'E9e en indice de cr\'E9ation des tableaux de score }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b LIGNES}\~ 17\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+constante d\'E9finie pour \'EAtre utilis\'E9e en indice de cr\'E9ation des tableaux de score }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b NOMBREDES}\~ 5\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+constante d\'E9finie pour \'EAtre utilis\'E9e en ondice de cr\'E9ation des tableaux de D\'E9s }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedefs\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef char {\b nom}[9]\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+type correspondant \'E0 un nom de joueur de 8 caract\'E8res maximum }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b affichagechoix} (int tab[{\b LIGNES}][{\b COLONNES}], int joueur)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui affiche au joueur les choix qui lui sont encore disponibles }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b afficherDES} (char de[5][7])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui affiche les d\'E9s de mani\'E8re pseudo-graphique (des jolis d\'E9s en ascii) gr\'E2ce \'E0 une s\'E9rie de printf() }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b afficherFeuille} ({\b nom} nom1, {\b nom} nom2, int tab[{\b LIGNES}][{\b COLONNES}])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure calculant les scores totaux et de bonus des deux joueurs puis affiche la fiche de marque. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b annoncerVainqueur} (int tab[{\b LIGNES}][{\b COLONNES}], {\b nom} noms[2])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fonction qui compare les scores totaux des deux joueurs et affiche le nom du vainqueur }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b choixDES} (int nbDES[5])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui demande au joueur quels d\'E9s choisir en faisant varier un tableau de [5] \'E9l\'E9ments entre 0 et 1 (l'utilisateur entre le num\'E9ro du d\'E9 \'E0 garder/lacher) }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b choixOption} (int Des[{\b NOMBREDES}], int tab[{\b LIGNES}][{\b COLONNES}], int tabtour[{\b LIGNES}][{\b COLONNES}], int joueur)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fonction qui demande au joueur de choisir une option et qui attribue le score de l'option choisie au tableau de score }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b comptageNb} (int DES[{\b NOMBREDES}], int nombre)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fonction qui permet de compter le nombre de fois qu'un entier apparait dans un tableau de d\'E9s }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b conversion} (int DES[5], char de[5][7])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui convertit un tableau de d\'E9s (valeurs entre 1 et 6) en tableau de caract\'E8res sp\'E9cifique pour l'affichage }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b conversion} (int DES[{\b NOMBREDES}], char de[{\b NOMBREDES}][7])\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b demandeValid} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fonction demandant au joueur si il veut relancer des d\'E9s et retourne 1 si oui 0 si non ou 42 en cas d'erreur }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b lancerDES} (int nbDes[{\b NOMBREDES}], int Des[{\b NOMBREDES}])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui attribue une valeur al\'E9atoire aux \'E9l\'E9ments d'un tableau[5] "Des" en fonction d'un tableau[5] "nbDes" rempli de 0 ou 1. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b MiseAUn} (int DES[{\b NOMBREDES}])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+met \'E0 1 tous les \'E9l\'E9ments d'un tableau DES de taille [5] }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b MiseAZero} (int tab[{\b LIGNES}][{\b COLONNES}])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+met \'E0 z\'E9ro un tableau de [17][2] cases }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ordonnerDes} (int Des[], int nbDes)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui trie un tableau par ordre croissant }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v COLONNES\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:COLONNES}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define COLONNES\~ 2}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+constante d\'E9finie pour \'EAtre utilis\'E9e en indice de cr\'E9ation des tableaux de score }}\par
+{
+Definition at line {\b 30} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v LIGNES\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:LIGNES}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define LIGNES\~ 17}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+constante d\'E9finie pour \'EAtre utilis\'E9e en indice de cr\'E9ation des tableaux de score }}\par
+{
+Definition at line {\b 25} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v NOMBREDES\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:NOMBREDES}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define NOMBREDES\~ 5}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+constante d\'E9finie pour \'EAtre utilis\'E9e en ondice de cr\'E9ation des tableaux de D\'E9s }}\par
+{
+Definition at line {\b 35} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedef Documentation\par
+\pard\plain 
+{\xe \v nom\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:nom}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef char nom[9]}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+type correspondant \'E0 un nom de joueur de 8 caract\'E8res maximum }}\par
+{
+Definition at line {\b 20} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v affichagechoix\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:affichagechoix}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void affichagechoix (int  {\i tab}[LIGNES][COLONNES], int  {\i joueur})}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui affiche au joueur les choix qui lui sont encore disponibles }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i tab} \cell }{tableau[17][2] rempli de 0(choix disponible) ou de 1(choix indisponible) qui permet l'affichage des choix disponibles \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i joueur} \cell }{num\'E9ro du joueur correspondant aux colonnes du tableau "tab" \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Note\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+attention, le joueur doit obligatoirement rentrer un entier au clavier.\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 434} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v afficherDES\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:afficherDES}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void afficherDES (char  {\i de}[5][7])}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui affiche les d\'E9s de mani\'E8re pseudo-graphique (des jolis d\'E9s en ascii) gr\'E2ce \'E0 une s\'E9rie de printf() }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i de} \cell }{tableau de caract\'E8res d\'E9finissant l'affichage des d\'E9s\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 406} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v afficherFeuille\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:afficherFeuille}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void afficherFeuille ({\b nom}  {\i nom1}, {\b nom}  {\i nom2}, int  {\i tab}[LIGNES][COLONNES])}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure calculant les scores totaux et de bonus des deux joueurs puis affiche la fiche de marque. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i nom1} \cell }{nom du joueur 1 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i nom2} \cell }{nom du joueur 2 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i tab} \cell }{tableau de [17][2] cases repr\'E9sentant le score\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 250} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v annoncerVainqueur\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:annoncerVainqueur}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void annoncerVainqueur (int  {\i tab}[LIGNES][COLONNES], {\b nom}  {\i noms}[2])}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fonction qui compare les scores totaux des deux joueurs et affiche le nom du vainqueur }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i tab} \cell }{tableau[17][2] de scores \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i noms} \cell }{tableau[2] de noms des joueurs \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Note\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+attention, le joueur doit obligatoirement rentrer un entier au clavier\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 635} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v choixDES\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:choixDES}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void choixDES (int  {\i nbDES}[5])}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui demande au joueur quels d\'E9s choisir en faisant varier un tableau de [5] \'E9l\'E9ments entre 0 et 1 (l'utilisateur entre le num\'E9ro du d\'E9 \'E0 garder/lacher) }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{out\cell }{{\i nbDES} \cell }{tableau de [5] \'E9l\'E9ments entiers (soit 0 soit 1)\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 301} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v choixOption\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:choixOption}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void choixOption (int  {\i Des}[NOMBREDES], int  {\i tab}[LIGNES][COLONNES], int  {\i tabtour}[LIGNES][COLONNES], int  {\i joueur})}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fonction qui demande au joueur de choisir une option et qui attribue le score de l'option choisie au tableau de score }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i Des} \cell }{tableau de d\'E9s pris en compte pour attribuer un score \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{out\cell }{{\i tab} \cell }{tableau[17][2] des scores des deux joueurs pour chaque case de la feuille de marque \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{out\cell }{{\i tabtour} \cell }{tableau[17][2] de forme identique \'E0 "tab" qui contient des 1 aux options d\'E9j\'E0 utilis\'E9es pour que le joueur ne puisse pas rejouer deux fois la m\'EAme chose \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i joueur} \cell }{num\'E9ro du joueur correspondant aux colonnes des deux tableaux "tab" et "tabtour"\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 523} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v comptageNb\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:comptageNb}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int comptageNb (int  {\i DES}[NOMBREDES], int  {\i nombre})}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fonction qui permet de compter le nombre de fois qu'un entier apparait dans un tableau de d\'E9s }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i DES} \cell }{tableau[5] de d\'E9s \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i nombre} \cell }{entier \'E0 compter dans le tableau de d\'E9s\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Entier repr\'E9sentant le nombre d'it\'E9ration de "nombre" dans "DES" \par
+}}}{
+Definition at line {\b 510} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v conversion\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:conversion}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void conversion (int  {\i DES}[5], char  {\i de}[5][7])}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui convertit un tableau de d\'E9s (valeurs entre 1 et 6) en tableau de caract\'E8res sp\'E9cifique pour l'affichage }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i DES} \cell }{tableau[5] de d\'E9s converti par la proc\'E9dure \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{out\cell }{{\i de} \cell }{tableau[5][7] de caract\'E8res (" " ou "*") pour la fonction afficherDES(de)\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}}
+{\xe \v conversion\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:conversion}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void conversion (int  {\i DES}[NOMBREDES], char  {\i de}[NOMBREDES][7])}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 341} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v demandeValid\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:demandeValid}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int demandeValid ()}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fonction demandant au joueur si il veut relancer des d\'E9s et retourne 1 si oui 0 si non ou 42 en cas d'erreur }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Entier (0, 1, 42) \par
+}}}{
+Definition at line {\b 415} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v lancerDES\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:lancerDES}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void lancerDES (int  {\i nbDes}[NOMBREDES], int  {\i Des}[NOMBREDES])}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui attribue une valeur al\'E9atoire aux \'E9l\'E9ments d'un tableau[5] "Des" en fonction d'un tableau[5] "nbDes" rempli de 0 ou 1. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i nbDes} \cell }{tableau[5] rempli de 0 ou 1 d\'E9terminant quels d\'E9s doivent \'EAtre lan\'E7\'E9s. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{out\cell }{{\i Des} \cell }{tableau[5] rempli de valeurs al\'E9atoires entre 1 et 6 par la proc\'E9dure en fonction du tableau "nbDes". \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Note\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+seul un entier peut \'EAtre entr\'E9 par le joueur, sinon le programme ne fonctionne pas.\par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 329} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v main\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+tableaux comportant respectivement les scores et des valeurs binaires permettant \'E0 l'utilisateur de choisir des options\par
+tableau de deux noms rempli par les joueurs au d\'E9but de la partie\par
+compteurs et bool\'E9ens utiles au d\'E9roulement du {\b main()} (tour = nb de tours, nbEssais = nb de relances disponibles \'E0 chaque tour, joueur = num\'E9ro du joueur, valid = bool\'E9en de validation fourni par le joueur)\par
+tableaux contenant respectivepent les D\'E9s et les D\'E9s \'E0 conserver/relancer pour chaque tour\par
+tableau de caract\'E8res utile \'E0 l'affichage des d\'E9s en ascii\par
+}{
+Definition at line {\b 154} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v MiseAUn\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:MiseAUn}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MiseAUn (int  {\i DES}[NOMBREDES])}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+met \'E0 1 tous les \'E9l\'E9ments d'un tableau DES de taille [5] }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{out\cell }{{\i DES} \cell }{tableau de [5] \'E9l\'E9ments \'E0 modifier\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 292} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v MiseAZero\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:MiseAZero}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MiseAZero (int  {\i tab}[LIGNES][COLONNES])}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+met \'E0 z\'E9ro un tableau de [17][2] cases }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{out\cell }{{\i tab} \cell }{un tableau \'E0 mettre \'E0 z\'E9ro\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 238} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+{\xe \v ordonnerDes\:Jeu_De_Yams_Martin_ROUXEL.c}
+{\xe \v Jeu_De_Yams_Martin_ROUXEL.c\:ordonnerDes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ordonnerDes (int  {\i Des}[], int  {\i nbDes})}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+proc\'E9dure qui trie un tableau par ordre croissant }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{out\cell }{{\i Des} \cell }{tableau \'E0 trier \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i nbDes} \cell }{taille du tableau \'E0 trier\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void \par
+}}}{
+Definition at line {\b 491} of file {\b Jeu_De_Yams_Martin_ROUXEL.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Jeu_De_Yams_Martin_ROUXEL.c\par \pard\plain 
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 \par
+00010 {\cf21 #include <stdlib.h>}\par
+00011 {\cf21 #include <stdio.h>}\par
+00012 {\cf21 #include <time.h>}\par
+00013 {\cf21 #include <unistd.h>}\par
+00014 {\cf21 #include <string.h>}\par
+00015 \par
+00020 {\cf17 typedef} {\cf18 char} nom[9];\par
+00025 {\cf21 #define LIGNES 17}\par
+00030 {\cf21 #define COLONNES 2}\par
+00035 {\cf21 #define NOMBREDES 5}\par
+00036 \par
+00044 {\cf18 void} MiseAZero({\cf18 int} tab[LIGNES][COLONNES]);\par
+00054 {\cf18 void} afficherFeuille(nom nom1, nom nom2, {\cf18 int} tab[LIGNES][COLONNES]);\par
+00062 {\cf18 void} MiseAUn({\cf18 int} DES[NOMBREDES]);\par
+00070 {\cf18 void} choixDES({\cf18 int} nbDES[5]);\par
+00080 {\cf18 void} lancerDES({\cf18 int} nbDes[NOMBREDES], {\cf18 int} Des[NOMBREDES]);\par
+00089 {\cf18 void} conversion({\cf18 int} DES[5], {\cf18 char} de[5][7]);\par
+00097 {\cf18 void} afficherDES({\cf18 char} de[5][7]);\par
+00103 {\cf18 int} demandeValid();\par
+00113 {\cf18 void} affichagechoix({\cf18 int} tab[LIGNES][COLONNES], {\cf18 int} joueur);\par
+00122 {\cf18 void} ordonnerDes({\cf18 int} Des[], {\cf18 int} nbDes);\par
+00131 {\cf18 int} comptageNb({\cf18 int} DES[NOMBREDES], {\cf18 int} nombre);\par
+00142 {\cf18 void} choixOption({\cf18 int} Des[NOMBREDES], {\cf18 int} tab[LIGNES][COLONNES], {\cf18 int} tabtour[LIGNES][COLONNES], {\cf18 int} joueur);\par
+00152 {\cf18 void} annoncerVainqueur({\cf18 int} tab[LIGNES][COLONNES], nom noms[2]);\par
+00153 \par
+00154 {\cf18 int} main() {\cf20 //d\'E9but du programme principal}\par
+00155 \{\par
+00156     srand(time(NULL));\par
+00161     {\cf18 int} tableau[LIGNES][COLONNES], tableautour[LIGNES][COLONNES];\par
+00166     nom noms[2];\par
+00171     {\cf18 int} nbEssais, tour, joueur, valid;\par
+00176     {\cf18 int} DES[NOMBREDES], nbDES[NOMBREDES];\par
+00181     {\cf18 char} de[5][7];\par
+00182 \par
+00183     printf({\cf22 "entrer le nom du joueur 1 (8 caract\'E8res max) :\\n"}); {\cf20 // demande aux joueurs leurs noms et les entre dans le tableau noms[2]}\par
+00184     scanf({\cf22 "%s"}, noms[0]);\par
+00185     {\cf19 while} (strlen(noms[0]) > 8)\par
+00186     \{\par
+00187         printf({\cf22 "nombre de caract\'E8re trop \'E9lev\'E9\\n"});\par
+00188         scanf({\cf22 "%s"}, noms[0]);\par
+00189     \}\par
+00190     printf({\cf22 "entrer le nom du joueur 2 (8 caract\'E8res max) :\\n"});\par
+00191     scanf({\cf22 "%s"}, noms[1]);\par
+00192     {\cf19 while} (strlen(noms[1]) > 8)\par
+00193     \{\par
+00194         printf({\cf22 "nombre de caract\'E8re trop \'E9lev\'E9\\n"});\par
+00195         scanf({\cf22 "%s"}, noms[1]);\par
+00196     \}\par
+00197     MiseAZero(tableau);               {\cf20 //met le tableau de score \'E0 z\'E9ro}\par
+00198     MiseAZero(tableautour);           {\cf20 //met le "tableau des choix" \'E0 0, ce tableau indique quelles cases le joueur peut encore remplir.}\par
+00199     {\cf19 for} (tour = 0; tour < 13; tour++) {\cf20 //la partie dure 13 tours, le temps de remplir chaque case de la feuille de marque}\par
+00200     \{\par
+00201 \par
+00202         {\cf19 for} (joueur = 0; joueur < 2; joueur++) {\cf20 //le corps du programme s'execute une fois pour chaque joueur, par tour}\par
+00203         \{\par
+00204             afficherFeuille(noms[0], noms[1], tableau); {\cf20 //affiche la feuille de marque pour que le joueur se rep\'E8re facilement au niveau des scores}\par
+00205             MiseAUn(nbDES);\par
+00206             nbEssais = 2;          {\cf20 //configure le nombre de relance de d\'E9s disponibles \'E0 2}\par
+00207             lancerDES(nbDES, DES); {\cf20 //remplis le tableau de d\'E9s avec des valeurs pseudo-al\'E9atoires de 1 \'E0 6}\par
+00208             conversion(DES, de);\par
+00209             printf({\cf22 "Au tour de %s :"}, noms[joueur]); {\cf20 //indique quel joueur doit interagir avec le terminal pour le prochain tour}\par
+00210             afficherDES(de);                         {\cf20 //affiche les d\'E9s en caract\'E8res ascii}\par
+00211 \par
+00212             {\cf19 do} {\cf20 //demande au joueur un nombre limit\'E9 de fois si il souhaite changer certains d\'E9s}\par
+00213             \{\par
+00214 \par
+00215                 valid = demandeValid();\par
+00216 \par
+00217                 {\cf19 if} (valid == 1) {\cf20 //si le joueur valide, il relance les d\'E9s de son choix, sinon il doit directement choisir une option}\par
+00218                 \{\par
+00219 \par
+00220                     choixDES(nbDES);\par
+00221                     lancerDES(nbDES, DES);\par
+00222                     conversion(DES, de);\par
+00223                     afficherDES(de);\par
+00224                     nbEssais--; {\cf20 //le nombre de relance est diminu\'E9 apr\'E8s cette \'E9tape}\par
+00225                 \}\par
+00226             \} {\cf19 while} (nbEssais != 0 && valid == 1);\par
+00227 \par
+00228             ordonnerDes(DES, NOMBREDES);                    {\cf20 //trie les d\'E9s pour le bon fonctionnement de l'attribution des scores}\par
+00229             choixOption(DES, tableau, tableautour, joueur); {\cf20 //demande au joueur courant de choisir une option non remplie et lui attribue un score}\par
+00230         \}\par
+00231     \}\par
+00232 \par
+00233     afficherFeuille(noms[0], noms[1], tableau); {\cf20 //affiche la feuille de marque une derni\'E8re fois}\par
+00234     annoncerVainqueur(tableau, noms);           {\cf20 //compare les deux scores et annonce un vainqueur}\par
+00235     {\cf19 return} 0;\par
+00236 \}\par
+00237 \par
+00238 {\cf18 void} MiseAZero({\cf18 int} tab[LIGNES][COLONNES]) {\cf20 //remplace tous les \'E9l\'E9ments d'un tableau par 0}\par
+00239 \{\par
+00240     {\cf18 int} i, k; {\cf20 //compteurs}\par
+00241     {\cf19 for} (i = 0; i < COLONNES; i++)\par
+00242     \{\par
+00243         {\cf19 for} (k = 0; k < LIGNES; k++)\par
+00244         \{\par
+00245             tab[k][i] = 0; {\cf20 //remplacement par 0}\par
+00246         \}\par
+00247     \}\par
+00248 \}\par
+00249 \par
+00250 {\cf18 void} afficherFeuille(nom nom1, nom nom2, {\cf18 int} tab[LIGNES][COLONNES]) {\cf20 //affiche la feuille de marque apr\'E8s avoir calcul\'E9 les scores totaux}\par
+00251 \{\par
+00252     {\cf19 if} ((tab[0][0] + tab[1][0] + tab[2][0] + tab[3][0] + tab[4][0] + tab[5][0]) >= 63)\par
+00253     \{\par
+00254         tab[6][0] = 35; {\cf20 //bonus joueur 1}\par
+00255     \}\par
+00256     {\cf19 if} ((tab[0][1] + tab[1][1] + tab[2][1] + tab[3][1] + tab[4][1] + tab[5][1]) >= 63)\par
+00257     \{\par
+00258         tab[6][1] = 35; {\cf20 //bonus joueur 2}\par
+00259     \}\par
+00260     tab[7][0] = tab[0][0] + tab[1][0] + tab[2][0] + tab[3][0] + tab[4][0] + tab[5][0] + tab[6][0];       {\cf20 //total sup J1}\par
+00261     tab[7][1] = tab[0][1] + tab[1][1] + tab[2][1] + tab[3][1] + tab[4][1] + tab[5][1] + tab[6][1];       {\cf20 //total sup J2}\par
+00262     tab[15][0] = tab[8][0] + tab[9][0] + tab[10][0] + tab[11][0] + tab[12][0] + tab[13][0] + tab[14][0]; {\cf20 //total inf J1}\par
+00263     tab[15][1] = tab[8][1] + tab[9][1] + tab[10][1] + tab[11][1] + tab[12][1] + tab[13][1] + tab[14][1]; {\cf20 //total inf J2}\par
+00264     tab[16][0] = tab[7][0] + tab[15][0];                                                                 {\cf20 //total score J1}\par
+00265     tab[16][1] = tab[7][1] + tab[15][1];                                                                 {\cf20 //total score J2}\par
+00266     printf({\cf22 "\\n"});\par
+00267     printf({\cf22 "J1:%8s J2:%8s      J1        J2\\n"}, nom1, nom2);\par
+00268     printf({\cf22 "---------------------------------------------\\n"});\par
+00269     printf({\cf22 "Partie Sup\'E9rieure\\n"});\par
+00270     printf({\cf22 "1 [total de 1]          |   %3d   |   %3d   |\\n"}, tab[0][0], tab[0][1]);\par
+00271     printf({\cf22 "2 [total de 2]          |   %3d   |   %3d   |\\n"}, tab[1][0], tab[1][1]);\par
+00272     printf({\cf22 "3 [total de 3]          |   %3d   |   %3d   |\\n"}, tab[2][0], tab[2][1]);\par
+00273     printf({\cf22 "4 [total de 4]          |   %3d   |   %3d   |\\n"}, tab[3][0], tab[3][1]);\par
+00274     printf({\cf22 "5 [total de 5]          |   %3d   |   %3d   |\\n"}, tab[4][0], tab[4][1]);\par
+00275     printf({\cf22 "6 [total de 6]          |   %3d   |   %3d   |\\n"}, tab[5][0], tab[5][1]);\par
+00276     printf({\cf22 "Bonus                   |   %3d   |   %3d   |\\n"}, tab[6][0], tab[6][1]);\par
+00277     printf({\cf22 "Total Sup\'E9rieur         |   %3d   |   %3d   |\\n"}, tab[7][0], tab[7][1]);\par
+00278     printf({\cf22 "---------------------------------------------\\n"});\par
+00279     printf({\cf22 "Partie Inf\'E9rieure\\n"});\par
+00280     printf({\cf22 "Brelan                  |   %3d   |   %3d   |\\n"}, tab[8][0], tab[8][1]);\par
+00281     printf({\cf22 "Carr\'E9                   |   %3d   |   %3d   |\\n"}, tab[9][0], tab[9][1]);\par
+00282     printf({\cf22 "Full                    |   %3d   |   %3d   |\\n"}, tab[10][0], tab[10][1]);\par
+00283     printf({\cf22 "Petite Suite            |   %3d   |   %3d   |\\n"}, tab[11][0], tab[11][1]);\par
+00284     printf({\cf22 "Grande Suite            |   %3d   |   %3d   |\\n"}, tab[12][0], tab[12][1]);\par
+00285     printf({\cf22 "Yams                    |   %3d   |   %3d   |\\n"}, tab[13][0], tab[13][1]);\par
+00286     printf({\cf22 "Chance [total des DES]  |   %3d   |   %3d   |\\n"}, tab[14][0], tab[14][1]);\par
+00287     printf({\cf22 "Total Inf\'E9rieur         |   %3d   |   %3d   |\\n"}, tab[15][0], tab[15][1]);\par
+00288     printf({\cf22 "---------------------------------------------\\n"});\par
+00289     printf({\cf22 "Total                   |   %3d   |   %3d   |\\n\\n\\n"}, tab[16][0], tab[16][1]);\par
+00290 \}\par
+00291 \par
+00292 {\cf18 void} MiseAUn({\cf18 int} DES[NOMBREDES]) {\cf20 //remplace les \'E9l\'E9ments d'un tableau par 1}\par
+00293 \{\par
+00294     {\cf18 int} i; {\cf20 //compteur}\par
+00295     {\cf19 for} (i = 0; i < 5; i++)\par
+00296     \{\par
+00297         DES[i] = 1; {\cf20 //mise \'E0 1}\par
+00298     \}\par
+00299 \}\par
+00300 \par
+00301 {\cf18 void} choixDES({\cf18 int} nbDES[5]) {\cf20 //permet au joueur de s\'E9lectionner les d\'E9s qu'il veut garder/changer}\par
+00302 \{\par
+00303     {\cf18 int} rep;        {\cf20 //r\'E9ponse du joueur}\par
+00304     MiseAUn(nbDES); {\cf20 //par d\'E9faut tous les d\'E9s sont chang\'E9s}\par
+00305     {\cf19 do}\par
+00306     \{\par
+00307         printf({\cf22 "\\ns\'E9lectionnez un d\'E9 \'E0 conserver ou lacher, 0 pour arr\'EAter\\n"});\par
+00308         {\cf19 do}\par
+00309         \{\par
+00310             scanf({\cf22 "%d"}, &rep);\par
+00311             {\cf19 if} (rep < 0 || rep > 5)\par
+00312             \{\par
+00313                 printf({\cf22 "valeur incorrecte, r\'E9entrez un nombre\\n\\n"});\par
+00314             \}\par
+00315         \} {\cf19 while} (rep < 0 || rep > 5);\par
+00316         {\cf19 if} (nbDES[rep - 1] == 0) {\cf20 //d\'E9 lach\'E9 si d\'E9 d\'E9j\'E0 gard\'E9}\par
+00317         \{\par
+00318             nbDES[rep - 1] = 1;\par
+00319             printf({\cf22 "d\'E9 %d lach\'E9\\n"}, rep);\par
+00320         \}\par
+00321         {\cf19 else} {\cf19 if} (nbDES[rep - 1] == 1) {\cf20 //d\'E9 gard\'E9 si d\'E9 d\'E9j\'E0 lach\'E9}\par
+00322         \{\par
+00323             nbDES[rep - 1] = 0;\par
+00324             printf({\cf22 "d\'E9 %d conserv\'E9\\n"}, rep);\par
+00325         \}\par
+00326     \} {\cf19 while} (rep != 0);\par
+00327 \}\par
+00328 \par
+00329 {\cf18 void} lancerDES({\cf18 int} nbDes[NOMBREDES], {\cf18 int} Des[NOMBREDES]) {\cf20 //lance les d\'E9s (tableau de 5 entiers)}\par
+00330 \{\par
+00331     {\cf18 int} i;\par
+00332     {\cf19 for} (i = 0; i < 5; i++)\par
+00333     \{\par
+00334         {\cf19 if} (nbDes[i] == 1) {\cf20 //pour chaque d\'E9, si le bool\'E9en du tableau nbDes correspondant est 1, il est chang\'E9}\par
+00335         \{\par
+00336             Des[i] = (rand() % (6 - 1 + 1)) + 1; {\cf20 //entier pseudo-al\'E9atoire entre 1 et 6}\par
+00337         \}\par
+00338     \}\par
+00339 \}\par
+00340 \par
+00341 {\cf18 void} conversion({\cf18 int} DES[NOMBREDES], {\cf18 char} de[NOMBREDES][7]) {\cf20 //permet de rendre le tableau de d\'E9s apte \'E0 l'affichage}\par
+00342 \{\par
+00343     {\cf18 int} i;\par
+00344     {\cf19 for} (i = 0; i < 5; i++) {\cf20 //pour chaque d\'E9}\par
+00345     \{\par
+00346         {\cf19 switch} (DES[i])\par
+00347         \{\par
+00348         {\cf19 case} 1: {\cf20 //le d\'E9 est un 1}\par
+00349             de[i][0] = {\cf23 ' '};\par
+00350             de[i][1] = {\cf23 ' '};\par
+00351             de[i][2] = {\cf23 ' '}; {\cf20 // -------  (affichage exemple pour le d\'E9 1)}\par
+00352             de[i][3] = {\cf23 '*'}; {\cf20 //|       |}\par
+00353             de[i][4] = {\cf23 ' '}; {\cf20 //|   *   |}\par
+00354             de[i][5] = {\cf23 ' '}; {\cf20 //|       |}\par
+00355             de[i][6] = {\cf23 ' '}; {\cf20 // -------}\par
+00356             {\cf19 break};\par
+00357         {\cf19 case} 2: {\cf20 //le d\'E9 est un 2}\par
+00358             de[i][0] = {\cf23 '*'};\par
+00359             de[i][1] = {\cf23 ' '};\par
+00360             de[i][2] = {\cf23 ' '};\par
+00361             de[i][3] = {\cf23 ' '};\par
+00362             de[i][4] = {\cf23 ' '};\par
+00363             de[i][5] = {\cf23 ' '};\par
+00364             de[i][6] = {\cf23 '*'};\par
+00365             {\cf19 break};\par
+00366         {\cf19 case} 3: {\cf20 //le d\'E9 est un 3}\par
+00367             de[i][0] = {\cf23 '*'};\par
+00368             de[i][1] = {\cf23 ' '};\par
+00369             de[i][2] = {\cf23 ' '};\par
+00370             de[i][3] = {\cf23 '*'};\par
+00371             de[i][4] = {\cf23 ' '};\par
+00372             de[i][5] = {\cf23 ' '};\par
+00373             de[i][6] = {\cf23 '*'};\par
+00374             {\cf19 break};\par
+00375         {\cf19 case} 4: {\cf20 //le d\'E9 est un 4}\par
+00376             de[i][0] = {\cf23 '*'};\par
+00377             de[i][1] = {\cf23 '*'};\par
+00378             de[i][2] = {\cf23 ' '};\par
+00379             de[i][3] = {\cf23 ' '};\par
+00380             de[i][4] = {\cf23 ' '};\par
+00381             de[i][5] = {\cf23 '*'};\par
+00382             de[i][6] = {\cf23 '*'};\par
+00383             {\cf19 break};\par
+00384         {\cf19 case} 5: {\cf20 //le d\'E9 est un 5}\par
+00385             de[i][0] = {\cf23 '*'};\par
+00386             de[i][1] = {\cf23 '*'};\par
+00387             de[i][2] = {\cf23 ' '};\par
+00388             de[i][3] = {\cf23 '*'};\par
+00389             de[i][4] = {\cf23 ' '};\par
+00390             de[i][5] = {\cf23 '*'};\par
+00391             de[i][6] = {\cf23 '*'};\par
+00392             {\cf19 break};\par
+00393         {\cf19 case} 6: {\cf20 //le d\'E9 est un 6}\par
+00394             de[i][0] = {\cf23 '*'};\par
+00395             de[i][1] = {\cf23 '*'};\par
+00396             de[i][2] = {\cf23 '*'};\par
+00397             de[i][3] = {\cf23 ' '};\par
+00398             de[i][4] = {\cf23 '*'};\par
+00399             de[i][5] = {\cf23 '*'};\par
+00400             de[i][6] = {\cf23 '*'};\par
+00401             {\cf19 break};\par
+00402         \}\par
+00403     \}\par
+00404 \}\par
+00405 \par
+00406 {\cf18 void} afficherDES({\cf18 char} de[5][7]) {\cf20 //affiche les d\'E9s horizontalement avec l'aide de la fonction pr\'E9c\'E9dente}\par
+00407 \{\par
+00408     printf({\cf22 "\\n -------  -------  -------  -------  ------- \\n"});\par
+00409     printf({\cf22 "| %c   %c || %c   %c || %c   %c || %c   %c || %c   %c |\\n"}, de[0][0], de[0][1], de[1][0], de[1][1], de[2][0], de[2][1], de[3][0], de[3][1], de[4][0], de[4][1]);\par
+00410     printf({\cf22 "| %c %c %c || %c %c %c || %c %c %c || %c %c %c || %c %c %c |\\n"}, de[0][2], de[0][3], de[0][4], de[1][2], de[1][3], de[1][4], de[2][2], de[2][3], de[2][4], de[3][2], de[3][3], de[3][4], de[4][2], de[4][3], de[4][4]);\par
+00411     printf({\cf22 "| %c   %c || %c   %c || %c   %c || %c   %c || %c   %c |\\n"}, de[0][5], de[0][6], de[1][5], de[1][6], de[2][5], de[2][6], de[3][5], de[3][6], de[4][5], de[4][6]);\par
+00412     printf({\cf22 " -------  -------  -------  -------  ------- \\n"});\par
+00413 \}\par
+00414 \par
+00415 {\cf18 int} demandeValid() {\cf20 //demande au joueur si il veut relancer ou non des d\'E9s}\par
+00416 \{\par
+00417     {\cf18 int} rep = 2;\par
+00418     {\cf19 while} (rep < 0 || rep > 1)\par
+00419     \{\par
+00420         printf({\cf22 "souhaitez vous relancer 0 (oui)/1 (non)\\n"});\par
+00421         scanf({\cf22 "%d"}, &rep);\par
+00422     \}\par
+00423     {\cf19 if} (rep == 0) {\cf20 //si le joueur r\'E9pond 0 la proc\'E9dure retourne 1}\par
+00424     \{\par
+00425         {\cf19 return} 1;\par
+00426     \}\par
+00427     {\cf19 else} {\cf20 //sinon elle retourne 0}\par
+00428     \{\par
+00429         {\cf19 return} 0;\par
+00430     \}\par
+00431     {\cf19 return} 42; {\cf20 //en cas d'erreur la fonction retourne 42}\par
+00432 \}\par
+00433 \par
+00434 {\cf18 void} affichagechoix({\cf18 int} tab[LIGNES][COLONNES], {\cf18 int} joueur) {\cf20 //cette fonction affiche les choix que le joueur peut encore faire (les choix ne s'affichent qu'une fois et disparaissent apr\'E8s avoir \'E9t\'E9 utilis\'E9s)}\par
+00435 \{\par
+00436     printf({\cf22 "\\nchoisissez une des options disponibles :\\n"});\par
+00437     {\cf19 if} (tab[0][joueur] == 0)\par
+00438     \{\par
+00439         printf({\cf22 "total de 1 = 1\\n"});\par
+00440     \}\par
+00441     {\cf19 if} (tab[1][joueur] == 0)\par
+00442     \{\par
+00443         printf({\cf22 "total de 2 = 2\\n"});\par
+00444     \}\par
+00445     {\cf19 if} (tab[2][joueur] == 0)\par
+00446     \{\par
+00447         printf({\cf22 "total de 3 = 3\\n"});\par
+00448     \}\par
+00449     {\cf19 if} (tab[3][joueur] == 0)\par
+00450     \{\par
+00451         printf({\cf22 "total de 4 = 4\\n"});\par
+00452     \}\par
+00453     {\cf19 if} (tab[4][joueur] == 0)\par
+00454     \{\par
+00455         printf({\cf22 "total de 5 = 5\\n"});\par
+00456     \}\par
+00457     {\cf19 if} (tab[5][joueur] == 0)\par
+00458     \{\par
+00459         printf({\cf22 "total de 6 = 6\\n"});\par
+00460     \}\par
+00461     {\cf19 if} (tab[8][joueur] == 0)\par
+00462     \{\par
+00463         printf({\cf22 "brelan = 7\\n"});\par
+00464     \}\par
+00465     {\cf19 if} (tab[9][joueur] == 0)\par
+00466     \{\par
+00467         printf({\cf22 "carr\'E9 = 8\\n"});\par
+00468     \}\par
+00469     {\cf19 if} (tab[10][joueur] == 0)\par
+00470     \{\par
+00471         printf({\cf22 "fullhouse = 9\\n"});\par
+00472     \}\par
+00473     {\cf19 if} (tab[11][joueur] == 0)\par
+00474     \{\par
+00475         printf({\cf22 "petite suite = 10\\n"});\par
+00476     \}\par
+00477     {\cf19 if} (tab[12][joueur] == 0)\par
+00478     \{\par
+00479         printf({\cf22 "grande suite = 11\\n"});\par
+00480     \}\par
+00481     {\cf19 if} (tab[13][joueur] == 0)\par
+00482     \{\par
+00483         printf({\cf22 "Yams = 12\\n"});\par
+00484     \}\par
+00485     {\cf19 if} (tab[14][joueur] == 0)\par
+00486     \{\par
+00487         printf({\cf22 "Chance = 13\\n"});\par
+00488     \}\par
+00489 \}\par
+00490 \par
+00491 {\cf18 void} ordonnerDes({\cf18 int} Des[], {\cf18 int} nbDes) {\cf20 //tri du tableau de d\'E9s pour le choixOption()}\par
+00492 \{\par
+00493     {\cf18 int} tampon = 0, v = 0, i;\par
+00494 \par
+00495     {\cf19 do}\par
+00496     \{\par
+00497         {\cf19 for} (i = 0; i < nbDes; i++)\par
+00498         \{\par
+00499             {\cf19 if} (Des[i] > Des[i + 1])\par
+00500             \{\par
+00501                 tampon = Des[i];\par
+00502                 Des[i] = Des[i + 1];\par
+00503                 Des[i + 1] = tampon;\par
+00504             \}\par
+00505         \}\par
+00506         v++;\par
+00507     \} {\cf19 while} (v < nbDes);\par
+00508 \}\par
+00509 \par
+00510 {\cf18 int} comptageNb({\cf18 int} DES[NOMBREDES], {\cf18 int} nombre) {\cf20 //fonction qui compte le nombre d'apparition d'un entier dans les d\'E9s}\par
+00511 \{\par
+00512     {\cf18 int} i, resultat = 0;\par
+00513     {\cf19 for} (i = 0; i < NOMBREDES; i++)\par
+00514     \{\par
+00515         {\cf19 if} (DES[i] == nombre)\par
+00516         \{\par
+00517             resultat++;\par
+00518         \}\par
+00519     \}\par
+00520     {\cf19 return} resultat;\par
+00521 \}\par
+00522 \par
+00523 {\cf18 void} choixOption({\cf18 int} Des[NOMBREDES], {\cf18 int} tab[LIGNES][COLONNES], {\cf18 int} tabtour[LIGNES][COLONNES], {\cf18 int} joueur) {\cf20 //fonction au coeur du programme qui permet au joueur de choisir une option parmi celles qui sont disponibles et de gagner des points}\par
+00524 \{\par
+00525     {\cf18 int} reponse, nb, i; {\cf20 // (reponse = r\'E9ponse entr\'E9e par le joueur, nb = entier affect\'E9 de la fonction comptageNb(), i = compteur)}\par
+00526     affichagechoix(tabtour, joueur);\par
+00527     scanf({\cf22 "%d"}, &reponse);\par
+00528     {\cf19 if} (reponse < 7) {\cf20 // pour garder des num\'E9ros d'options coh\'E9rent je divise la table en deux parties (erreurs sinon \'E0 cause des cases "total" ou "bonus")}\par
+00529     \{\par
+00530         {\cf19 while} (tabtour[reponse - 1][joueur] == 1 || reponse < 1 || reponse > 13)\par
+00531         \{\par
+00532             printf({\cf22 "\\nun score est d\'E9j\'E0 attribu\'E9 \'E0 cette entr\'E9e ou la case s\'E9lectionn\'E9e n'existe pas, entrez \'E0 nouveau une r\'E9ponse :\\n"});\par
+00533             scanf({\cf22 "%d"}, &reponse);\par
+00534         \}\par
+00535     \}\par
+00536     {\cf19 else} {\cf19 if} (reponse > 6) {\cf20 //deuxi\'E8me partie de la table}\par
+00537     \{\par
+00538         {\cf19 while} (tabtour[reponse + 1][joueur] == 1 || reponse < 1 || reponse > 13)\par
+00539         \{\par
+00540             printf({\cf22 "\\nun score est d\'E9j\'E0 attribu\'E9 \'E0 cette entr\'E9e ou la case s\'E9lectionn\'E9e n'existe pas, entrez \'E0 nouveau une r\'E9ponse :\\n"});\par
+00541             scanf({\cf22 "%d"}, &reponse);\par
+00542         \}\par
+00543     \}\par
+00544     {\cf19 for} (i = 1; i < 7; i++) {\cf20 //pour les r\'E9ponses 1 \'E0 6 l'affectation du score est la m\'EAme}\par
+00545     \{\par
+00546         {\cf19 if} (reponse == i)\par
+00547         \{\par
+00548             nb = comptageNb(Des, i);\par
+00549             tab[i - 1][joueur] = i * nb;\par
+00550             tabtour[i - 1][joueur] = 1;\par
+00551         \}\par
+00552     \}\par
+00553     {\cf19 switch} (reponse) {\cf20 //switch pour tous les autres cas de r\'E9ponse possible}\par
+00554     \{\par
+00555     {\cf19 case} 7: {\cf20 //brelan (donne les points si trois fois le m\'EAme d\'E9)}\par
+00556         {\cf19 for} (i = 0; i < 6; i++)\par
+00557         \{\par
+00558             {\cf19 if} (comptageNb(Des, i + 1) >= 3)\par
+00559             \{\par
+00560                 tab[8][joueur] = (i + 1) * 3;\par
+00561                 {\cf19 break};\par
+00562             \}\par
+00563         \}\par
+00564         tabtour[8][joueur] = 1; {\cf20 //pour chaque choix effectu\'E9, la case correspondante du tableau tabtour est mise \'E0 1 ce qui emp\'EAche l'option d'\'EAtre affich\'E9e ET s\'E9lectionn\'E9e au futur}\par
+00565         {\cf19 break};\par
+00566 \par
+00567     {\cf19 case} 8: {\cf20 //carr\'E9 (donne les points si quatre fois le m\'EAme d\'E9)}\par
+00568         {\cf19 for} (i = 0; i < 6; i++)\par
+00569         \{\par
+00570             {\cf19 if} (comptageNb(Des, i + 1) >= 4)\par
+00571             \{\par
+00572                 tab[9][joueur] = (i + 1) * 4;\par
+00573             \}\par
+00574         \}\par
+00575         tabtour[9][joueur] = 1;\par
+00576         {\cf19 break};\par
+00577 \par
+00578     {\cf19 case} 9: {\cf20 //fullhouse (donne les points si 3 d\'E9s + 2 d\'E9s identiques)}\par
+00579 \par
+00580         {\cf19 if} ((Des[0] == Des[1] && Des[2] == Des[4]) || (Des[0] == Des[2] && Des[3] == Des[4]))\par
+00581         \{\par
+00582             tab[10][joueur] = 25;\par
+00583         \}\par
+00584 \par
+00585         tabtour[10][joueur] = 1;\par
+00586         {\cf19 break};\par
+00587 \par
+00588     {\cf19 case} 10: {\cf20 //petite suite (donne les points si les d\'E9s pr\'E9sentent une suite croissante de 3 nombres ex : 1,2,3)}\par
+00589         {\cf19 if} ((Des[0] + 1 == Des[1] && Des[1] + 1 == Des[2] && Des[2] + 1 == Des[3]) || (Des[1] + 1 == Des[2] && Des[2] + 1 == Des[3] && Des[3] + 1 == Des[4]))\par
+00590         \{\par
+00591             tab[11][joueur] = 30;\par
+00592         \}\par
+00593 \par
+00594         tabtour[11][joueur] = 1;\par
+00595         {\cf19 break};\par
+00596 \par
+00597     {\cf19 case} 11: {\cf20 //grande suite (donne les points si les d\'E9s forment une suite de 5 nombres ex : 1,2,3,4,5)}\par
+00598         {\cf19 if} (Des[0] + 1 == Des[1])\par
+00599         \{\par
+00600             {\cf19 if} (Des[1] + 1 == Des[2])\par
+00601             \{\par
+00602                 {\cf19 if} (Des[2] + 1 == Des[3])\par
+00603                 \{\par
+00604                     {\cf19 if} (Des[3] + 1 == Des[4])\par
+00605                     \{\par
+00606                         tab[12][joueur] = 40;\par
+00607                     \}\par
+00608                 \}\par
+00609             \}\par
+00610         \}\par
+00611         tabtour[12][joueur] = 1;\par
+00612         {\cf19 break};\par
+00613 \par
+00614     {\cf19 case} 12: {\cf20 //yams (donne les points si tous les d\'E9s sont identiques)}\par
+00615         {\cf19 for} (i = 0; i < 5; i++)\par
+00616         \{\par
+00617             {\cf19 if} (Des[0] == Des[1] && Des[1] == Des[2] && Des[2] == Des[3] && Des[3] == Des[4])\par
+00618             \{\par
+00619                 tab[13][joueur] = 50;\par
+00620             \}\par
+00621         \}\par
+00622         tabtour[13][joueur] = 1;\par
+00623         {\cf19 break};\par
+00624 \par
+00625     {\cf19 case} 13: {\cf20 //chance (donne des points \'E9quivalents \'E0 la somme des d\'E9s)}\par
+00626         {\cf19 for} (i = 0; i < 5; i++)\par
+00627         \{\par
+00628             tab[14][joueur] = tab[14][joueur] + Des[i];\par
+00629         \}\par
+00630         tabtour[14][joueur] = 1;\par
+00631         {\cf19 break};\par
+00632     \}\par
+00633 \}\par
+00634 \par
+00635 {\cf18 void} annoncerVainqueur({\cf18 int} tab[LIGNES][COLONNES], nom noms[2]) {\cf20 //proc\'E9dure qui annonce le vainqueur apr\'E8s avoir compar\'E9 les scores des joueurs}\par
+00636 \{\par
+00637     {\cf19 if} (tab[16][0] == tab[16][1])\par
+00638     \{\par
+00639         printf({\cf22 "\'E9galit\'E9 entre les deux joueurs avec un total de %d points.\\n"}, tab[16][0]); {\cf20 //cas d'\'E9galit\'E9 (tr\'E8s tr\'E8s peu probable)}\par
+00640     \}\par
+00641     {\cf19 else} {\cf19 if} (tab[16][0] > tab[16][1])\par
+00642     \{\par
+00643         printf({\cf22 "%s l'emporte avec un total de %d points.\\n"}, noms[0], tab[16][0]); {\cf20 //J1 l'emporte}\par
+00644     \}\par
+00645     {\cf19 else}\par
+00646     \{\par
+00647         printf({\cf22 "%s l'emporte avec un total de %d points.\\n"}, noms[1], tab[16][1]); {\cf20 //J2 l'emporte}\par
+00648     \}\par
+00649 \}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
